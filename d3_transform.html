@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1{
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+            border-right: 5px solid blue;
+            background-color: magenta;
+            position: relative;
+            top: 150px;
+            left: 300px;
+           transition-duration: 2s;
+
+
+        }
+        /* hover : event , when pointer in on this element it will do movemennt  */
+
+        #d1:hover{
+            /* transform: translate(100px 100px); */
+            /* transform: rotate(-45deg); */
+
+            /* scale  : scaleup scaledown , more than 1 , it will multi. by this value */
+            /* transform: scale(0.5); */
+            /* transform: scale(2); */
+            /* skew(angle  along x axis angle along y axis) */
+            /* transform: skew(30deg , 30deg); */
+
+            /* we can change rotate feom different center  */
+            transform: rotate(-45deg);
+            transform-origin: 200px 200px;
+            /* transform: rotate(45deg) translate(-50px , -50px); */
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="d1"></div>
+</body>
+</html>

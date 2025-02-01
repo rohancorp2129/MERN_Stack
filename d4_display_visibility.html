@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .divs{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            display: block;
+        }
+        #d1{
+            background-color: red;
+        }
+        #d2{
+            background-color: green;
+        }
+        #d3{
+            background-color: blue;
+            /* visibility: hidden; */
+        }
+        #d4{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+    Dispaly 
+
+    inline  : It makes the eelement behave like inline element 
+                It ignore height and width of element 
+    block : It makes the lelement behave like block element , it does not reset width and height 
+    
+    inline-block : it makes element behave like inline element without ignoring height and width 
+                it 
+    none :  it makes element disappear from the page 
+            it does not reserver ther space of the element
+
+    
+    Visibility : 
+
+    visible: It keeps the elementy visible 
+    hidden : it makes the element disappear from the webpage 
+            space it remain reserved
+
+    Q: What is the diff bet display-none and visibility hidden 
+        Display-none : it makes elements disappear from webpage and and it does not reserved space of element 
+                        but for visibility none it disappear the elelment from webpage with reserver space on page 
+    -->
+    <div id="parent">
+
+    <div class="divs" id="d1">Div 1</div>
+    <div class="divs" id="d2">Div 2</div>
+    <div class="divs" id="d3">Div 3</div>
+    <div class="divs" id="d4">Div 4</div>
+    </div>
+</body>
+</html>
