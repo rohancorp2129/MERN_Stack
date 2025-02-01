@@ -1,0 +1,151 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow: hidden; /* Prevents overflow from background image */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fG1hbmFsaXxlbnwwfHx8fDE2ODI0MjY0MjM&ixlib=rb-4.0.3&q=80&w=1080'); /* Example image */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Adjust opacity for a subtle effect */
+    z-index: 1; /* Place behind the form */
+}
+.nav-link {
+    color: white; /* Text color */
+    padding: 10px 15px; /* Padding for the link */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition for background and transform */
+    margin: 0 10px; /* Margin between links */
+}
+/* Contact Us  */
+.contact-link {
+    background-color: #007BFF; /* Blue background */
+    color: white; /* White text */
+    padding: 10px 15px; /* Padding for better click area */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.contact-link:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: #f8f9fa; /* Light text on hover */
+}
+
+/* Fruit  */
+nav {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.nav-link {
+    color: white; /* Text color */
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 15px; /* Padding for better click area */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition for background and transform */
+}
+
+.fruits {
+    background-color: #28a745; /* Green for Fruits */
+}
+
+.pandemic {
+    background-color: #dc3545; /* Red for Pandemic */
+}
+
+.booking {
+    background-color: #007BFF; /* Blue for Booking */
+}
+
+.nav-link:hover {
+    opacity: 0.8; /* Slightly fade on hover */
+    transform: scale(1.05); /* Slightly enlarge the link */
+}
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+    position: relative; /* Ensure it sits above the background */
+    z-index: 2; /* Place above the background */
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #007BFF;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+    outline: none;
+}
+
+textarea {
+    resize: none; /* Prevent resizing of the textarea */
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, #007BFF, #00BFFF);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.5);
+}
+
+.submit-btn:hover {
+    background: linear-gradient(45deg, #0056b3, #0099cc);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 86, 179, 0.5);
+}
