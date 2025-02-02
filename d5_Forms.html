@@ -1,0 +1,110 @@
+<!--
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="MyCss.css">
+</head>
+<body>
+    <h1>Visitor Details </h1>
+    <form action="" method="">
+        <table>
+            <tr>
+                <td>Enter Fist Name:</td>
+                <td><input type="text" placeholder="Rohan" name="Fname" required /></td>
+            </tr>
+            <tr>
+                <td>Enter Last Name:</td>
+                <td><input type="text" placeholder="Rakh" name="Lname" required /></td>
+            </tr>
+            <tr>
+                <td>Enter Contact Number:</td>
+                <td><input type="tel" placeholder="+91 1234567890" name="phone" required /></td>
+            </tr>
+            <tr>
+                <td>Enter Email :</td>
+                <td><input type="email" name="email" required /></td>
+            </tr>
+            <tr>
+                <td>Enter Address :</td>
+                <td><textarea id="" name="Address"></textarea></td>
+            </tr>
+            <tr>
+                <td>Enter Birthdate :</td>
+                <td><input type="date" name="DOB" /></td>
+            </tr>
+            <tr>
+                <td>Select Qualification :</td>
+                <td>
+                    <select name="Qualification" id="">
+                        <option value="">Select Qualification</option>
+                    <option value="Graduate">Graduate</option>
+                    <option value="Post Graduate">Post Graduate</option>
+                    <option value="HSC">HSC</option>
+                    <option value="SSC">SSC</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Select Skills :</td>
+                <td>
+                    <input type="checkbox" name="Skills" value="HTML"/><label for="">HTML</label> <br/>
+                    <input type="checkbox" name="Skills" value="CSS"/> <label for="">CSS </label><br/>
+                    <input type="checkbox" name="Skills" value="Bootstrap"/> <label for="">Bootstrap </label><br/>
+                    <input type="checkbox" name="Skills" value="React Js"/> <label for="">React Js </label><br/>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>Select Gender :</td>
+                <td>
+                    <label>Male </label><input type="radio" name="gender" value="Male" />
+                    <label>Female </label><input type="radio" name="gender" value="Female"/>
+                    <label>Other </label><input type="radio" name="gender" value="Other"/>
+                </td>
+            </tr>
+                
+           
+        </table>
+                 <input class="button" type="submit"/>
+                <input type="reset" />
+    </form>
+    
+</body>
+</html>
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Attractive Form</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Sign Up</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
