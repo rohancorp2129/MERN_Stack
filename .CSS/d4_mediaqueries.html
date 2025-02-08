@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madia Queries </title>
+    <style>
+        #d1{
+            width: 70%;
+            background-color: red;
+            float: left;
+
+        }
+        #d2{
+            width: 30%;
+            background-color: blue;
+            float: left;
+
+        }
+        /* 
+            min width : The styling gets applied when the display size is greter then min-width 
+            max width : The styling gets applied when the display size is lesser the max-width 
+         */
+         /* @media screen and (max-width : 1220px) {
+            #d1{
+                width: 100%;
+                background-color: yellow;
+
+            }
+            #d2{
+                width: 100%;
+                background-color: green;
+            }
+         } */
+
+         /* Mobile  */
+          @media  screen and (min-width: 90px) and (max-width: 320px) {
+            #d1{
+                width: 100%;
+                background-color: blue;
+            }
+            #d2{
+                width: 100%;
+                background-color: limegreen;
+            }
+            h1{
+                font-size: 15px;
+            }
+            
+          }
+          /* Tablet / Laptop */
+          @media  screen and (min-width: 321px) and (max-width: 860px) {
+            #d1{
+                width: 50%;
+                background-color: yellowgreen;
+                float: left;
+            }
+            #d2{
+                width: 50%;
+                background-color: purple;
+                float: left;
+            }
+            h1{
+                font-size: 25px;
+            }
+          }
+          @media  screen and (min-width: 860px) and (max-width: 1220px) {
+            #d1{
+                width: 60%;
+                float: left;
+                background-color: yellow;
+            }
+            #d2{
+                width: 40%;
+                float: left;
+                background-color: green;
+            }
+            h1{
+                font-size: 30px;
+            }
+          }
+          @media  screen and (min-width: 1221px) and (max-width: 1700px) {
+            #d1{
+                width: 60%;
+                background-color: aqua;
+                float: left;
+                
+            }
+            #d2{
+                width: 40%;
+                background-color: violet;
+                float: left;
+                
+            }
+            h1{
+                font-size: 35px;
+            }
+          }
+            @media  screen and (min-width: 1701px) {
+                #d1{
+                    width: 70%;
+                    background-color: red;
+                    float: left;
+                }
+                #d2{
+                    width: 30%;
+                    background-color: blue;
+                    float: left;
+                }
+                h1{
+                    font-size: 40px;
+                }
+            }
+    </style>
+</head>
+<body>
+    <div id="d1"><h1>This is Div 1 hello world!</h1></div>
+    <div id="d2"><h1>This is Div 2 hello world!</h1></div>
+</body>
+</html>

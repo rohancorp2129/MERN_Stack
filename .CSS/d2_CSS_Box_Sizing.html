@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Sizing</title>
+
+<style>
+    #title1 {
+        
+
+        /* width style color */
+        /* border-width: 5px; */
+        /* border-style: double; */
+        /* border-color: red; */
+
+            /* width style color */
+
+    /*  shorthand method  */
+    /* ***************** */
+    /* border */
+    /* border : width style color  */
+        border: 2px solid black;
+
+    /* border-top: 2px solid blue; */
+    /* border-right: 3px solid green; */
+    /* border-left: 3px dotted red; */
+    /* border-bottom: 2px ridge yellow; */
+
+        /* *************************** */
+    border-radius: 30px;
+    /* border-top-left-radius: 15px; */
+    /* border-radius: 30px 10px 25px 50px; */
+
+    /* ****************************** */
+    padding: 30px;
+        /* padding-top: 10px; */
+        /* padding-right: 10px; */
+        /* padding-bottom: 10px; */
+        /* padding-left: 10px; */
+    /*  Padding  :  top right bottom left */
+    /* padding: 10px 20px 50px 40px; */
+    /* **************************** */
+    /* Margin  : */
+    /* margin: 50px; */
+    margin: 5px 10px 15px 20px;
+
+
+    }
+    #Pd1{
+        /* Pixels */
+        width: 300px;
+        height: 300px;
+        /* max-height: 300px; */
+        /* min-width: 200px; */
+        border: 5px solid black;
+
+    }
+    #Cd1{
+        /*  percentage  : works accourding parents hight and width */
+        width: 50%;
+        height: 50%;
+
+        border: 5px solid blue;
+
+/* 
+        Overflow : 
+        Parents child will be change auto , if you change child height and width . 
+
+        max-height : (deal with child )if you gave max height to parent and you are taking <= height to child , it will increase or decrease . but if you gave more that max height , then child box will go out of pareant box 
+
+        while giving % values : it depend upon parents size 
+
+        min-width :( deal with browser display )  if you are minimizing your browser manually , than time if you are going under that assign min width value , it goes out of the browser 
+
+
+*/
+    }
+    
+</style>
+</head>
+<body>
+    <h1 id="title1">Batch1203</h1>
+    <div id="Pd1">
+        <div id="Cd1"></div>
+    </div>
+</body>
+</html>

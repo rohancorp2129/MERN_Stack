@@ -1,0 +1,24 @@
+css - Casecading style sheet 
+- **CSS** is a styling language used to control the layout of web pages.
+
+Types of css :
+- **Internal CSS** : This is a CSS code written inside the HTML document of head tag .
+- **External CSS** : This is a CSS code written in a separate file and linked to the file . 
+we use key : value pair 
+- **Inline CSS** : 
+
+- **Priority** : 
+(1) inline : first priority 
+(2) internal /External ( Thoes define at last , it take from there )
+
+div = Space reserved on web page 
+rgb : 
+127 127 127 ---- Grey color 
+0 0 0 -----------black  ( absense of all colors)
+255 255 255 -----white 
+
+in rgb alpha value is between (0- 1)
+
+how we can change color of font ? :  color 
+how we can change background color ? : background-color
+

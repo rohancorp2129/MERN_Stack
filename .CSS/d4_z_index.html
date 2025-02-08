@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .divs{
+            z-index: 5;
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+            border-radius: 30px;
+            
+        }
+        #d1{
+            background-color: red;
+            position: relative;
+
+        }
+        #d2{
+            z-index: 3;
+            background-color: green;
+            position: relative;
+            top: -110px;
+            left: 50px;
+
+        }
+        #d3{
+            z-index: 2;
+            background-color: blue;
+            position: relative;
+            top: -220px;
+            left: 100px;
+            
+        }
+ 
+    </style>
+</head>
+<body>
+    <div class="divs" id="d1"></div>
+    <div class="divs" id="d2"></div>
+    <div class="divs" id="d3"></div>
+    
+</body>
+</html>
