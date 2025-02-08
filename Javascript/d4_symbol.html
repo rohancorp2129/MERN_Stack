@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Symbol in Js : to create unique value,
+
+    It is a primitive datatype.
+    It is a modern js feature which is used to generate unique key  in objects ......
+    student1{
+        uniquekey1 : "value1",  // unique key
+        name : "Rohan",
+        age : 25,
+        city : "Pune"
+    }
+    student2{
+    uniquekey2 : "value2",  // unique key
+        name : "Rahul",
+        age : 28,
+        city : "Pune"
+    }
+    -->
+    <script>
+        let smb1 =Symbol("abc");
+        let smb2 =Symbol("abc");
+        console.log(smb1 ==smb1);  // false
+
+        let std1={};
+        let std2={};
+
+        std1[smb1]="Rohan";
+        std2[smb2]="Rahul";
+
+        consol.log(smb1);
+        consol.log(smb2);
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Math Object :
+
+        It is an obj of js , which gives us math fun 
+    -->
+        <script>
+            console.log(Math);
+
+            console.log(Math.min(12,34,45,566,23,45,567,78,78,67,54,32,23,2,3,54,67,78,8));
+            console.log(Math.max(12,34,45,566,23,45,567,78,78,67,54,32,23,2,3,54,67,78,8));
+
+            let numarr=[12,34,45,67,67,78,45,34,2,34,54,67,34];
+            console.log(Math.max(...numarr));
+            console.log(Math.min(...numarr));
+
+            /*
+                spread operator 
+                    it is modern js ES6 feature
+                    it is used to extract , concat or replace value from an array 
+                    it is repressented by ... dots
+
+            */
+           // rounded
+           console.log(Math.round(12.0273)); //12  val<0.5
+           console.log(Math.round(31.66));   //32  val>0.5
+           
+           // floor : Rounds up the decimal to nearest small interger 
+           // ceil : Rounds up the decimal to nearest large integer
+           console.log(Math.floor(12.67)); //12  
+           console.log(Math.ceil(21.01));  //22
+           console.log(Math.floor(-12.67)); //-13
+           console.log(Math.ceil(-21.01));  //-21
+
+           // Truncate 
+                // trunc : It removes the decimal values  and return only integers part
+
+                console.log(Math.trunc(34.23));
+            
+            /* sapsedi game 
+            random 
+                it return a random number bet. 0 to 1
+            */
+           console.log(Math.random());
+           console.log(Math.random()*100); //0 to 100
+
+
+           /*
+           sqrt : square root
+
+           cbrt : cube root 
+
+           pow : It gives us the val of a number raised to given power
+
+           */
+          console.log(Math.sqrt(25));
+          console.log(Math.sqrt(69));
+
+          console.log(Math.cbrt(125));
+          console.log(Math.cbrt(27));
+
+          console.log(Math.pow(5,3));
+          console.log(Math.pow(5,4));
+            // 1. Math.abs() : returns absolute value of a number
+            // console.log(Math.abs(-5)); // 5
+
+        </script>
+</body>
+</html>

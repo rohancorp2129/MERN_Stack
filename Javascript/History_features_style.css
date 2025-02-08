@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+section {
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  border-radius: 5px;
+}
+
+h2 {
+  color: #333;
+}
+
+#output {
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+
+button:active {
+  background-color: #aaa;
+}
+
+.console-log-output {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.console-log-output pre {
+  font-size: 14px;
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+
+.console-log-output code {
+  font-size: 14px;
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+
+i {
+  margin-right: 10px;
+}
+.gradient-custom {
+  background: linear-gradient(to right, rgba(106, 17, 203, 0.9), rgba(37, 117, 252, 0.9));
+}
+body {
+  height: 100vh; /* Ensure the body takes the full height of the viewport */
+  margin: 0; /* Remove default margin */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(200, 200, 255, 0.9));
+}

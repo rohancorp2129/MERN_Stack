@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Objects</title>
+</head>
+<body>
+    <!-- 
+    DOM : Document Object Model 
+        It is a object repersentation of our HTML page for javascript 
+        It is usefull iteracting and interacting with the html elements through Js
+
+
+    Methods for accessing elements using DOM :
+        1. getElementById : it return the element having the given ID
+        2. getElementsByClassName : it return the elements having the given class name
+        3. getElementsByTagName : it return the elements having the given tag name
+            h1, p , 
+        4. getElementsByName : This method returns an array of all element having same name 
+
+        Additional methods for accessing HTML elements :
+        
+        1. querySelector(#id, .class .tagname , name ) : it returns first occurence of the elelement matching the given class, id , title ...
+        2. querySelectorAll(#id, .class .tagname , name ) : it returns all
+        
+
+    -->
+        <div id="d1">
+            <h1 id="title">Hello Everyone</h1>
+        </div>
+        <p class=" demotext"> This is a simple text1</p>
+        <p class=" demotext"> This is a simple text2</p>
+        <p class=" demotext"> This is a simple text3</p>
+        <p class=" demotext"> This is a simple text4</p>
+        <p class=" demotext" name="demo"> This is a simple text5</p>
+        <p class=" demotext"> This is a simple text6</p>
+        <p class=" demotext" name="demo"> This is a simple text7</p>
+
+        <hr/>
+
+        <input type="radio" name="redbtn" value="option1" id="">
+        <input type="radio" name="redbtn" value="option2" id="">
+        <input type="radio" name="redbtn" value="option3" id="">
+        <input type="radio" name="redbtn" value="option4" id="">
+        <script>
+
+            console.log(document);
+            console.log("****************************");
+            console.log(document.getElementById("d1").innerHTML);
+            console.log("****************************");
+            let element = document.getElementsByClassName("demotext");
+            for(let val of element){
+                console.log(val.innerHTML);
+            }
+            console.log("****************************");
+
+            let nameElements = document.getElementsByName("demo");
+            for (let val of nameElements){
+                console.log(val.innerHTML);
+            }
+            console.log("****************************");
+            let ele1 =document.querySelector("title");
+            console.log(ele1.innerHTML);  // its taken from line 6 title 
+
+            console.log("****************************");
+            let ele2 = document.querySelectorAll(".demotext");
+            for (let val of ele2) {
+                console.log(val.innerHTML);
+                }
+        </script>
+</body>
+</html>

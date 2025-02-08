@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number</title>
+</head>
+<body>
+    <!-- 
+Task 1:
+
+Write a program to check whether the number given by user is prime or not
+
+Task 2:
+
+Take a number from user and print all prime numbers till that given number -->
+<script>
+
+    let prime = parseInt(prompt("Enter a Number: "));
+
+    // check whether number is negative 
+    while (prime < 0) {
+        alert("Please enter a positive number");
+        prime = parseInt(prompt("Enter a Number: "));
+    }
+
+    // check whether number is 0 or 1
+    while (prime == 0 || prime == 1) {
+        alert("Please enter a number greater than 1");
+        prime = parseInt(prompt("Enter a Number: "));
+    }
+
+    let isPrime = true;
+    for (let i = 2; i <= Math.sqrt(prime); i++) { 
+        if (prime % i == 0) {
+            isPrime = false;
+            break;
+        }
+    }
+
+    if (isPrime) {
+        alert("The number is a prime number");
+    } else {
+        alert("The number is not a prime number");
+    }
+</script>
+
+</body>
+</html>

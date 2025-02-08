@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Login System</title>
+    <style>
+        body{
+            background-color: rgb(204, 175, 175);
+        }
+        .container {
+            margin: 20px;
+            padding: 20px;
+           
+        }
+        input {
+            margin: 10px;
+            padding: 8px;
+        }
+        button {
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>User Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <br>
+        <button onclick="addUser()">Login</button>
+        <button onclick="displayUsers()">Display Users</button>
+        <div id="output" class="output"></div>
+    </div>
+
+    <script>
+        // Array to store user objects
+        let users = [];
+
+        // Function to add user to array
+        function addUser() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username && password) {
+                // Create user object
+                const user = {
+                    username: username,
+                    password: password
+                };
+
+                // Add user to array
+                users.push(user);
+                
+                // Clear input fields
+                document.getElementById('username').value = '';
+                document.getElementById('password').value = '';
+
+                // Show success message
+                showOutput('User added successfully!');
+            } else {
+                showOutput('Please fill in both fields!');
+            }
+        }
+
+        // Function to display all users
+        function displayUsers() {
+            if (users.length === 0) {
+                showOutput('No users to display!');
+                return;
+            }
+
+            // Create HTML string using array methods
+            const usersList = users.map((user, index) => 
+                `User ${index + 1}:<br>
+                Username: ${user.username}<br>
+                Password: ${user.password}<br><br>`
+            ).join('');
+
+            showOutput(usersList);
+        }
+
+        // Helper function to display messages
+        function showOutput(message) {
+            document.getElementById('output').innerHTML = message;
+        }
+    </script>
+</body>
+</html>

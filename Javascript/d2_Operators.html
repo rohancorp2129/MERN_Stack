@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+<body>
+    <!-- Help to perform any operation 
+     
+    1. Assignment Operation :
+        =, +=, -=, *=, /=, %=, **=
+    
+    2. Arithmetic Operation :
+        +, -, *, /, % ( reminder)
+
+    3. Increment and Decrement Operation :
+        ++, --
+    4. logical Operation :
+        && = AND    both condition should be true
+        || = OR     atleast one condition should be true
+        !  = NOT
+    5. Equality Operation :
+        == :valid equality   , === :Strich equality ( IT check condition with datatype also),
+        !=, !==, !===
+    6. concatenation Operation :
+        + ( it will concatenate the string)
+    -->
+        <script>
+            // Assignment Operation
+            // var a = 10+20;
+
+            // var b=10;
+
+            // b +=5;   // b = b+5
+            // console.log(+b);
+            // b -=5;   // b = b-5
+            // console.log(b);
+            // b *=5;   // b = b*5
+            // console.log(b);
+
+
+            // Arithmetic Operation
+            // var a = 50;
+            // var b=10;
+            // console.log(a+b);
+            // console.log(a-b);
+            // console.log(a*b);
+            // console.log(a/b);
+            // console.log(a%b);
+
+            // Increment and Decrement Operation
+            // ++a pre-increment
+            // a++ post-increment
+            // var a=10;
+            // console.log(++a);
+
+
+
+            // Logical Operation
+
+            // not operator 
+            // var a = 10;
+            // if(a !=11){
+            //     console.log("A is not 10 ");
+            // }
+
+            // and operator
+            // var a = 10;
+            // if(a>0 && a<20){
+            //     console.log("A is between 0 and 20 ");
+            // }
+
+
+            // Equality Operation
+            //  == : It check only value
+            // === : It check value and type both , it need both value and type should be same
+            var a = 10; // number 
+            var b="10" // string
+
+            if(a == b){
+                console.log("Both are equal ");
+            }
+
+            var c="java"
+            var d="Script"
+            console.log(c+d); // javaScript
+
+            console.log(10+"5") // 105
+
+            console.log(10 - "9") // 1 it will convert string to number and then perform operation
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events </title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #d1{
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            background-color: #FFD700;
+            position: relative;
+            top: 30vh;
+            left: 40vw;
+            transition-duration: 1s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+        }
+        
+        
+        .shadow {
+            box-shadow: 0 0 100px #FFA07A;
+        }
+        
+        .radius {
+            border-radius: 50%;
+        }
+        
+        .translate {
+            transform: translateX(50px);
+        }
+        
+        .scale-up {
+            transform: scale(1.2);
+        }
+        
+        .glow {
+            text-shadow: 0 0 10px #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1" 
+         onclick="sclick()" 
+         ondblclick="dclick()"
+         oncontextmenu="rclick(event)"
+         onmouseover="mouseOver()"
+         onmouseout="mouseOut()"
+         onmousedown="mouseDown()"
+         onmouseup="mouseUp()"
+         onmousewheel="mouseWheel(event)">
+        🙂🙂🙂
+    </div>
+    <script>
+        let angle = 0;
+        let left = 40;
+        let maxLeft = 90;
+        let minLeft = 0;
+        let isMoon = false;
+        
+        function sclick() {
+            document.getElementById("d1").classList.toggle("shadow");
+            document.getElementById("d1").innerHTML = "Single Click!";
+        }
+        
+        function dclick() {
+            document.getElementById("d1").classList.toggle("radius");
+            document.getElementById("d1").innerHTML = "Double Click!";
+        }
+        
+        function rclick(event) {
+            event.preventDefault();
+            if (!isMoon) {
+                document.getElementById("d1").style.background = "#DCDAD5";
+                document.getElementById("d1").style.opacity = "0.5";
+                document.getElementById("d1").innerHTML = "Right Click! (Moon)";
+                isMoon = true;
+            } else {
+                document.getElementById("d1").style.background = "#FFD700";
+                document.getElementById("d1").style.opacity = "1";
+                document.getElementById("d1").innerHTML = "Right Click! (Sun)";
+                isMoon = false;
+            }
+        }
+        
+        function mouseOver() {
+            document.getElementById("d1").classList.add("scale-up");
+            document.getElementById("d1").classList.add("glow");
+            document.getElementById("d1").style.color = "#FFFFFF";
+            document.getElementById("d1").innerHTML = "Mouse Over!";
+        }
+        
+        function mouseOut() {
+            document.getElementById("d1").classList.remove("scale-up");
+            document.getElementById("d1").classList.remove("glow");
+            document.getElementById("d1").style.color = "#000000";
+            document.getElementById("d1").innerHTML = "Mouse Out!";
+        }
+        
+        function mouseDown() {
+            document.getElementById("d1").classList.add("translate");
+            document.getElementById("d1").innerHTML = "Mouse Down!";
+        }
+        
+        function mouseUp() {
+            document.getElementById("d1").classList.remove("translate");
+            document.getElementById("d1").innerHTML = "Mouse Up!";
+        }
+        
+        function mouseWheel(event) {
+            event.preventDefault();
+            if (event.deltaY > 0) {
+                angle += 10;
+                left -= 5;
+                if (left < minLeft) {
+                    left = minLeft;
+                }
+            } else {
+                angle -= 10;
+                left += 5;
+                if (left > maxLeft) {
+                    left = maxLeft;
+                }
+            }
+            document.getElementById("d1").style.transform = `rotate(${angle}deg)`;
+            document.getElementById("d1").style.left = `${left}vw`;
+        }
+        
+        window.addEventListener("resize", function() {
+            maxLeft = window.innerWidth / window.innerWidth * 100 - 30;
+        });
+        
+        window.addEventListener("load", function() {
+            maxLeft = window.innerWidth / window.innerWidth * 100 - 30;
+        });
+    </script>
+</body>
+</html>

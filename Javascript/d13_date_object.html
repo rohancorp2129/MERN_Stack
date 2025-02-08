@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Object</title>
+</head>
+<body>
+    <!-- 
+    date object :
+            It return current date and time 
+            it has some predefined fun , which helps us fetching the date and time 
+
+    -->
+            <script>
+                let todayDate= new Date();
+
+                console.log(todayDate);
+                console.log(todayDate.getDate()); //6
+                console.log(todayDate.getDay()); // sunday 0 ---- 
+                console.log(todayDate.getMonth()); // for jan - 0
+                console.log(todayDate.getFullYear()); // 2025
+
+                // setting date using constructor 
+                // let customDate = new Date("2002 jul 01, 13:25:00");
+                let customDate = new Date();
+                customDate.setFullYear(2002); //2002
+                customDate.setMonth(6); // july
+                customDate.setDate(1); //0
+
+                console.log(customDate);
+
+
+                // additional methods
+                console.log(todayDate.toLocaleDateString()); 
+                console.log(todayDate.toLocaleTimeString());
+                
+                console.log(todayDate.toLocaleString()); // date + time 
+
+                let montharr=["Jan","Feb","March","Apr","May"];
+                // create month of year array 
+
+                console.log(`${todayDate.getDate} 
+                            `); // january
+
+            </script>
+</body>
+</html>

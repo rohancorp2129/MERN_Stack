@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Rest Parameters : These are the extra parameters supplied while calling the function .
+
+    We use "..." spread operator for working eith the rest para.
+    
+    Except that first usable para those para which are not used , but we want to use them somewhere then we can use them using this .
+    -->
+    <script>
+        function add(num1 ,nym2, ...restpara ){
+            console.log(num1+nym2);
+
+            for(let i=0; i<arguments.length; i++){
+                console.log(arguments[i]);
+            }
+            console.log("************");
+
+            // for of loop 
+            for(let values of restpara){
+                console.log(values);
+            }
+        }
+
+        add(10,20,30,40);
+    </script>
+
+</body>
+</html>

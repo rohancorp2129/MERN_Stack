@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    
+    Array.isArray(var_name); It check whether the var is contain array or not 
+    array_name.includes(elements); It checks whether the given elements are present or not  
+    array_name.fill() : It replaced all data inside array wiht given ele. 
+    array_name.slice(): 
+    array_name.reverse(): it reverses the given array, it effects on original array 
+    array_name.sort(): sort natural it sort the array in alphabetical order in order top implemetns numerical sorting 
+                        we need to use callback fun 
+    array_name.toString();
+    array_name.join(saperation_symbol): 
+    array_name1.concat(array_name2): it merge two array into one array
+    array_flat(): brings all nested array 
+    array_name.valueOf(): as it is print array
+    Array.from(): convert string to array 
+    array_name.filter(callback): returned filtered data 
+    array_name.some(callback); return true when  any of element matches the given consition 
+    array_name.every(callback); return true when all element matches the given condition
+    
+    array_name.reduce() : 
+    -->
+    <script>
+        let arr1=[1,2,3,4,5,6,7,8,];
+        let arr2=["p","a","t","e","a","8","A"];
+        let arr3=[11,23,54,45,75,98,23];
+        let arr4=[1,2,3,["a","b","c","d"],5,6,7];
+
+        let str2="javascript";
+        console.log(arr1);
+        let num=50;
+        let str1="rohan";
+        console.log(Array.isArray(arr1));  // true
+        console.log(Array.isArray(num)); //false
+        console.log(Array.isArray(str1)); //false
+
+        console.log("*****************");
+        console.log(arr1.includes(5)); // true
+        console.log(arr1.includes(10)); // false
+        
+        console.log("*****************");
+        // arr1.fill("rohan");
+        console.log(arr1); // ["rohan", "rohan", "rohan", "]
+
+        // arr1.slice(5,2);
+        // console.log(arr1); 
+
+        // arr.reverse
+        arr1.reverse();
+        console.log(arr1); // [8, 7, 6, 5,4,3,2,1]
+
+        console.log("*****************");
+        console.log(arr2); // before sort
+        arr2.sort();
+        console.log(arr2); // After sort 
+
+        //  numerical sort 
+        console.log("*****************");
+        console.log(arr3); // before sort
+        // arr3.sort(); // gives wrong o/p
+        arr3.sort(function (a,b){
+            return a-b;
+        });
+        console.log(arr3); // After sort in asceding order 
+
+        // descending order 
+        arr3.sort((a,b)=>{
+            return b-a;
+        })
+
+        console.log("*****************");
+
+        arr2.toString();
+        console.log(arr2); // "p,a,t,e,a,8,A"
+        console.log("*****************");
+       
+        console.log(arr2.join(" ! ")); // 
+        console.log("*****************");
+
+        // array.concat
+        console.log(arr2.concat(arr3)); // [ "p", "a", "t","e", "a", 8, "A", "1", "2","3", "4", "5", "6", "7", "8" ]
+        
+        console.log("*****************");
+        // flat()
+        // consolelog(arr4.flat());
+        console.log("*****************");
+
+        console.log(arr3.valueOf());
+
+        console.log("*****************");
+        let arr5=Array.from(str2);
+        console.log(arr5); 
+        console.log("*****************");
+        console.log(Array.isArray(arr5));
+
+
+        // filter
+        console.log(
+            arr3.filter((val) =>{
+                return val>5;
+            })
+        );
+
+        console.log("*****************");
+            console.log(
+                arr3.some((val)=>{
+                    return val>50;
+                })
+            );
+        console.log("*****************");
+        console.log(
+            arr3.every((val)=>{
+                return val>50;
+            })
+        );
+
+
+        // ***********************************************
+
+        console.log("************************************");
+        console.log()
+        // reduce method 
+        console.log(arr3.reduce((acc,val)=>{
+            return acc+val;
+            },0)); 
+
+            /* create new login button 
+            userr name 
+            pass
+
+            store in object stored in array 
+
+            button - to display all users */
+
+</script>
+</body>
+</html>

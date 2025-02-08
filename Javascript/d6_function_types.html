@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Ways of writing functions
+
+    1. Normal fun/Names function 
+
+        function demo(){
+            code 
+        }
+
+    These function are normally naturally hoisted 
+    2. Variable names function  : The fun is treated as a variable 
+
+    3. Anonymous function  : similar like variable but without name 
+
+    4. Self-invoking Function : The fun gets called auto after its declaration 
+
+    5. Arrow fun/lambda fun / fat arrow fun : 
+        it is a feature of modern js, 
+        It can be used for writing very short fun / callback fun
+        writing "{}" is not mendatory if we are not using return keyword 
+
+    Callback Function : 
+        When a fun is paseed as an arg it is called a callback fun . we can pass a argemunt as a fun or else we can write fun using arrow fun 
+
+
+    Nested Fun : 
+            When we write a fun inside another fun and  used it there itself , it is called nested fun 
+    -->
+    <script>
+
+        const var1 = function demo(){
+            console.log("This is aa variable names fun /variable expression ");
+        };
+        var1();
+
+        console.log("******************");
+
+        // Variable names function 
+        const var2=function demo1(n1,n2){
+            let sum=n1+n2;
+            return sum;
+        };
+        console.log(var2(10,20));
+
+        console.log("******************");
+        // Anonymous function , no need name of funtion 
+        const var3=function(n1,n2){
+            console.log(n1**n2);
+        };
+        var3(2,3);
+
+        console.log("******************");
+        // Self-invoking Function : take fun inside () and for call just use () like at the end 
+       
+        (function(){
+            console.log("This is self invoking fun.")
+        }) ();
+        
+        (function(n1,n2){
+            console.log(n1+n2);
+        }) (50,50);
+
+        console.log("******************");
+        // Arrow Function 
+        const var4=()=>{
+            console.log("This is arrow functioon ");
+            };
+        var4();
+        const var5=(n1,n2)=> console.log(n1+n2); 
+        var5(2,3);
+
+        const var6 =(n1,n2) => { 
+            return n1+n2;
+        };
+        console.log(var6(2,3));
+
+        console.log("******************");
+
+        // Callback fun
+
+        function demo(){
+            console.log("This is demo fun");
+        }
+        function demo1(callback){
+            callback();
+            console.log("This is demo1 fun");
+            
+            }
+          demo1(demo);
+          
+          
+        //   function demo2(()=>{
+        //     return " this is callback fun "
+        //   }){
+        //     console.log("This is demo 2 function ")
+        //   }
+
+        // Nested Fun
+        console.log("******************");
+
+        function outerfun(){
+            function innerfun(){
+                console.log("This is inner fun");
+                }
+                innerfun();
+                console.log("This is outer fun");
+
+        }
+        outerfun();
+    </script>
+</body>
+</html>

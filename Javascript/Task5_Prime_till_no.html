@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime numbers till that given number</title>
+</head>
+<body>
+    <!-- Take a number from user and print all prime numbers till that given number -->
+     <script>
+        let prime = parseInt(prompt("Enter a Number: "));
+
+        // check whether number is negative 
+        while (prime < 0) {
+            alert("Please enter a positive number");
+            prime = parseInt(prompt("Enter a Number: "));
+        }
+
+        // check whether number is 0 or 1
+        while (prime == 0 || prime == 1) {
+            alert("Please enter a number greater than 1");
+            prime = parseInt(prompt("Enter a Number: "));
+        }
+
+        let result = "Prime numbers up to " + prime + " are: ";
+        for (let i = 2; i <= prime; i++) {
+            let isPrime = true;
+            for (let j = 2; j <= Math.sqrt(i); j++) {
+                if (i % j == 0) {
+                    isPrime=false;
+                    break;
+                }
+            }
+            if(isPrime){
+                result += i + " ";
+            }
+        }
+        document.write(result);
+    </script>
+</body>
+</html>

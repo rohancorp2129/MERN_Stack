@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    
+    Different for loops 
+    
+    for:
+    for(lrt i=0;i<arr.length;i++){
+        Code Block
+    }
+    for of: It is used in array specifically . 
+            It is also used in iteratable values like ( arrays, maps, set )
+
+    for in : Used in iteraating the keys of any object. used for non iterable values like objects
+
+    forEach : Used for performing some operations on individual elements of an array 
+
+
+
+
+    
+    -->
+    <script>
+        let arr = [1, 2, 3, 4, 5];
+
+        let obj1={
+            id : 101,
+            name : "Rahul",
+            age : 25,
+            phone : 1234567890
+        }
+
+        let arrmarks =[80,30, 40 ,50,20 , 30 , 20 ,25,45,34,23,56,67,789,];
+
+        // Normal for loop
+        for(let i=0; i<arr.length;i++){
+            console.log(arr[i]);
+        }
+console.log("****************")
+        // For of loop 
+        for(let i of arr){
+            console.log(i);
+        }
+
+
+console.log("****************");
+        // For in loop
+        for(let key in obj1){
+            console.log(key);
+        }
+console.log("****************");
+        // Print key : values 
+        for(let key in obj1){
+            console.log(`${key}:${obj1[key]}`)
+        }
+
+        // forEach
+        // print marks grater than 50 
+        arrmarks.forEach( (marks) =>{
+            if(marks>50){
+                console.log(marks);
+            }
+        });
+
+    </script>
+
+</body>
+</html>

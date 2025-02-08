@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser object Model</title>
+</head>
+<body>
+    <!-- 
+    BOM : Browser Object Model 
+
+    BOM help us to interact wiith the browser 
+
+    DOM ----- Document 
+    BOM------Window
+
+    Window object : 
+
+    Window object is a global scope 
+    Apart from window 'this' keyword is also a global object 
+
+
+    Window
+        |
+    document 
+
+    Window : window is a global object , an it is present in  our document throughout the code 
+
+    Basic Methods of BOM :
+
+        alert
+        confirm
+        prompt
+
+    More methods of BOM :
+
+    window.history : History object help us with navigating thought the history of our browser 
+
+    window.location  : We can get entire info about our URL 
+
+    window.navigator : This obj gives us the info about the browser and user environment 
+
+    window.screen:    This obj gives us the info about the screen of the user's device
+    window.print : 
+
+    -->
+    <button onclick="GoBack()">Go Back</button>
+    <button onclick="GoForeword()">Go Foreword</button>
+    <button onclick="Goback2pages()">Go back 2 pages</button>
+    <!-- Print page -->
+     <button onclick="window.print()">Print Page</button>
+     <!-- <button onclick="window.open('https://www.google.com','crome','width=450px height=500px')">Open Google</button> -->
+     <button onclick="window.open('./d13_BOM2.html','width=450px height=500px')">Open Page</button>
+
+    <script>
+        console.log(window);
+
+        // // alert 
+        // window.alert("THis is a alert printed using window global object ");
+        // // confirm
+        // window.confirm("Are you sure you want to delete this file ?");
+        // // prompt
+        // window.prompt("Enter your name : ","");
+        let history = window.history;
+        function GoBack(){
+            history.back();
+        }
+        function GoForeword(){
+            history.forward();
+        }
+        function Goback2pages(){
+            history.go(-2);
+            }
+
+        let loc = window.location;
+        console.log(loc);
+        console.log(loc.pathname);
+        console.log(loc.host);
+        console.log(loc.hostname);
+        console.log(loc.port);
+        console.log(loc.protocol);
+
+        let nav= window.navigator;
+        console.log(nav);
+        
+
+        let scr = window.screen;
+        console.log(scr);
+
+
+        
+    </script>
+</body>
+</html>

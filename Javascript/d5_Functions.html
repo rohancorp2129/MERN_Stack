@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    code reusability 
+    Function :  Function is a non-premitive datatype , 
+            It is used to execute a block of code only necessary 
+            It is used to execute a block of code repeatedly in our prog. / 
+            We can re-use code again and again (re-use)
+
+
+            We use parameters while declaring the fun to allow the use of dynamic values 
+            we use arguments while calling the fun . to provide the value to the parameters 
+            we use defauilt parameters in case the user does not provide any arg.
+
+    return keyword:
+    1. It gives the value outside the function block for using in other fun/uses
+    2. It terminates the function execution
+
+
+
+Task 1 :
+
+one button , good afternoor wiht name , if name not provided msg good afternoor guest . 
+        -->   
+            <!-- Event based function call -->
+            <button onclick="zoom()"> Enlarge Image</button>
+            <button onclick="add()"> Add Number </button>
+            <button onclick="avg()"> Average</button>
+
+             <br>
+            <hr/>
+            <img id="img" src="/HTML/media/nature.jpeg" alt="" width="400px" >
+            <h1 id="add"> Addition </h1>
+            <h1 id="avg"> Average</h1>
+    <script>
+        // direct execution 
+        // console.log("Hello Everyone !")
+
+        // // Function to be executed 
+        // function welcome(){
+        //     console.log("This is a nice afternoor !");
+        // }
+
+        // welcome(); // function call 
+
+        // let a=10;
+        // let b=40;
+
+
+        // // nornal way to writing fun
+        // function add(){
+        //     console.log(a+b);
+        // }
+
+
+        // function add(num1 , num2){
+        //     console.log(num1+num2);
+        // }
+        // normal fun call
+        // add();
+
+
+        // fun. call with arguments
+        // add(30,100);
+
+
+
+
+        // Default arguments : 
+        function demo( num1=1 , num2=2){
+            console.log(num1+num2);
+        }
+        demo();
+
+
+
+
+        // function zoom(){
+        //     document.getElementById("img").style.transform="scale(1.3)";
+        //     document.getElementById("img").style.transform="transalte(200px , 200px)";
+        // }
+
+        // function add(){
+        //     let num1= +prompt("Enter First number ");
+        //     let num2= +prompt("Enter Second number ");
+        //     let result= num1+num2;
+
+        //     document.getElementById("add").innerHTML=` The addition is : ${result}`
+        // }
+
+        // Average 
+        function sumMarks(){
+            let mark1= +prompt("Enter First Sub marks ");
+            let mark2= +prompt("Enter Second Sub marks ");
+            let mark3= +prompt("Enter Third Sub marks ");
+            let mark4= +prompt("Enter Fourth Sub marks ");
+            let mark5= +prompt("Enter Fifth Sub marks ");
+            let final =mark1+mark2+mark3+mark4+mark5;
+            
+            document.getElementById("add").innerHTML=` The addition is : ${final}`;
+            return final;
+
+        }
+        function avg(){
+            let sum=sumMarks();
+            let avg=sum/5;
+            document.getElementById("avg").innerHTML=` The Average of marks  is : ${avg}`;
+
+        }
+
+// return keyword
+        // function demo(){
+        //     console.log("Thuis is before return keyword");
+        //     console.log("Thuis is before return keyword");
+        //     console.log("Thuis is before return keyword");
+        //     console.log("Thuis is before return keyword");
+        //     console.log("Thuis is before return keyword");
+        //     console.log("Thuis is before return keyword");
+        //     console.log("Thuis is before return keyword");
+        //     return;
+
+        //     // Below code not be print 
+        //     console.log("Thuis is after return keyword");
+        //     console.log("Thuis is after return keyword");
+        //     console.log("Thuis is after return keyword");
+        //     console.log("Thuis is after return keyword");
+        //     console.log("Thuis is after return keyword");
+        //     console.log("Thuis is after return keyword");
+        // }
+        // demo();
+
+    </script>
+</body>
+</html>

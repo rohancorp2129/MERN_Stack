@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Form EVents : 
+        These are the events which helps us in interacting with the inputs and form elements 
+
+        onfocus : 
+        onblur : When we lose foucs or deselect the input 
+        onchange : 
+        onselect : this event occurer when we select the data in some input field. Doesn't work on 
+        onsubmit
+        onreset
+task :
+        create form 
+        take student data , when you taking apply this events 
+        while submit show in table after using onsubmit event 
+    -->
+        <form onsubmit="return confirm(`are you sure`)">
+            <label id="nameLabel" >Enter Name:</label>
+            <input type="text"  onfocus="showLabel()" 
+            onblur="hideLabel()" 
+            onchange="console.log('THe data has beed changed ')"
+            onselect="alert(`You can't select data like this`)"
+             />
+            
+            
+              <button type="submit">Submit</button>
+
+
+        </form>
+
+        <script>
+            function showLabel(){
+                 document.getElementById("nameLabel").style.display="inline";
+            }
+            function hideLabel(){
+                document.getElementById("nameLabel").style.display="none";
+            }
+            
+
+        </script>
+</body>
+</html>

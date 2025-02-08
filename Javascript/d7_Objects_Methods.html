@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Inbuilt method in Objects
+     The inbuilt method in objects is used to check if a property exists in an object or not
+     It returns true if the property exists in the object otherwise it returns false 
+
+     
+     1. Object.keys(Obj_name); Returns an array od all keys in the onject 
+     2. Object.values(Obj_name); Returns an array of all values in the object
+     3. Object.entries(Obj_name); Returns an array of multiple array containing the key value pairs 
+     4. Object.getOwnPropertyNames(Obj_name); Returns 
+     5. Object.is(value1 , Value2 ); Returns whether the both values 
+     6. isFinite(values ); It returns boolean value , it check whether passed value is finite or infinite
+     7. isNan(value);  Check wheather the given value number or not 
+     8. Object.isFrozen(value); 
+     9. Object.isSealed(value); 
+    -->
+     <script>
+        let obj1={
+            id: 101,
+            name: "Rahul",
+            phone : 1234567890,
+            mail : "rahul@gmail.com",
+            PhoneDetails:{
+                make : "Vivo",
+                model : "Vivo 10",
+                price : 15000
+                
+            }
+        };
+
+        // Object.keys(obj_name);
+        console.log(Object.keys(obj1));
+        console.log("*******************");
+        console.log(Object.values(obj1));
+        console.log("*******************");
+        console.log(Object.entries(obj1));
+        console.log("*******************");
+        console.log(Object.getOwnPropertyNames(obj1));
+        console.log("*******************");
+        console.log(Object.is("10",10));
+        console.log("*******************");
+        console.log(isFinite(2025));
+        console.log("*******************");
+        console.log(isNaN(2025));
+        console.log("*******************");
+        console.log(Object.isFrozen("rohan")); // cant change value 
+        console.log("*******************");
+        console.log(Object.isSealed("rohan"));
+
+       
+     </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+
+Git :
+    Version control system - Software
+
+Features : 
+    Powerful
+    Popular
+    Easy to use
+    Free
+    Open source
+    Fastable
+    Scalable
+
+
+**********************************************************
+
+
+Major Works :
+
+    Track code changes i.e. history of ypur code/Project 
+    Revert back code i.e. roll back / undo changes 
+    Work with team 
+    collabration environment 
+    Avoid over writing of code on same file by each developer   
+    Project maintain 
+    Most Powerfull Version control system Git
+cmd : 
+
+in gitbash  to add git at your project loc 
+    : git config --global user.name ""
+    : git config --global user.email ""
+git --status
+  
+    U- untracked -- git hub doesn/t track files i.e. when we add new files 
+    M-modified -- When we changes something in a  existing files 
+    A- Added (but not yet commit ) just add . 
+
+git add . / git add file_name
+
+git commit -m " messgae"
+
+git push -u origin main
+
+GitHub : 
+    To store and manage your code ---using Git
+

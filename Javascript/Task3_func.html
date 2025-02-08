@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- one button , good afternoor wiht name , if name not provided msg good afternoor guest . 
+if name is provided msg good afternoon name -->
+
+<button onclick="nameFun()">Click Me</button>
+
+<h1 id="nameFun"> </h1>
+<script>
+
+    
+    function nameFun(user ="Guest"){
+        
+        var user =prompt("Enter your Good Name : ") || user;
+
+        document.getElementById("nameFun").innerHTML=` Good Afternoon : ${user}`;
+    }
+    nameFun();
+   
+    // function nameFun(user){
+        
+    //     var user =prompt("Enter your Good Name : ") ?? user;
+
+    //     document.getElementById("nameFun").innerHTML=` Good Afternoon : ${user}`;
+    // }
+    // nameFun();
+</script>
+</body>
+</html>

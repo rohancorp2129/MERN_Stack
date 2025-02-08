@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Datatypes :
+
+    Primary Datatypes :
+        1. number   : it is used to store the number
+        2. string   : it is used to store the Charactors, denoted using single or double quotes
+        3. boolean  : it is used to store the true or false value
+        4. null     : it is used to store the null value, It gets applied when to value is assigned to the variable
+        5. undefined: it is used to store the undefined value, It gets applied when no value is assigned to the variable
+       
+        6. symbol   : it is used to store the unique value, It is used to create the unique value
+                    It generates unique identification for any object , No two symbols are same\
+                    
+            
+        7. bigint (big int)  : it is used to store the large number, It is denoted using "n" at the end of the number
+       
+    
+    Non-Primary Datatypes :
+        1. Function : 
+        2. Object   : It is a collection of key-value pairs,
+        3. Array  : It is a collection of similar or different datatypes of data
+    -->
+        <script>
+            var a;  // undefined
+            // a=10; // number
+            // a="Rohan";  // string
+            // a=true;  // boolean
+            // a=null;  // object
+            // a=[1,2,3,4,5];  // object
+            // a={name : "Rohan", age : 25};  // object
+            // a=10098765434567890987654n;  // bigint
+            // a=Symbol("Rohan");  // symbol
+            console.log(typeof a);  
+
+
+            // Non-Primary Datatypes
+            // 1. Function
+            function fun1(){
+                console.log("Hello");
+            }
+
+            fun1();  // function
+            console.log(typeof fun1);  // function
+
+            // 2. Object
+            var obj = {
+                name : "Rohan",
+                age : 25,
+                city : "Pune",
+            skills:["Java", "Python", "JavaScript"],
+            address : {
+                city : "Pune",
+                state : "MH",
+                country : "India"},
+
+                isMarried : false,
+            };
+            console.log(obj); 
+            console.log(typeof obj);  // object
+            
+
+            // 3. Array
+            var b;
+            var arr = [1, "two", null, b,[10,20,30], true];
+            console.log(arr);  // object
+            console.log(typeof arr);  // object
+
+            // ***********************************
+
+            var num = 10;
+            console.log(typeof num);  // number
+            console.log(typeof typeof num);  // string
+
+        </script>
+</body>
+</html>

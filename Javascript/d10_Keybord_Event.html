@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keybord Event</title>
+    <style>
+        #d1{
+            width: 100%;
+            height: 450px;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body 
+onkeypress="keyPress()"
+onkeyup="keyUp()"
+onkeydown="keyDown()"
+>
+    <!-- 
+    Keybord Events :
+        We have two types of keys on keybord
+
+    1. Printable keys : The keys which display some character on the screen( All letters , Space)
+    2. Non-Printable keys : The keys which do not display any character on the screen
+fun key on keybord : is neither non-printable nor printable
+1. onkeypress : it is called when any printable key is pressed 
+2. onkeydown : it is called when any non-printable key is pressed
+3. onkeyup : it is called when any key is released(unpressed)
+
+    -->
+<div id="d1">
+    <div id="message"></div>
+</div>
+    <script>
+        function keyPress() {
+            document.getElementById("message").innerHTML="A printable key is pressed";
+            document.getElementById("d1").style.backgroundColor="red";
+        }
+        function keyUp(){
+            document.getElementById("message").innerHTML="A key is released";
+            document.getElementById("d1").style.backgroundColor="green";
+        }
+        function keyDown(){
+            document.getElementById("message").innerHTML="A non-printable key is pressed";
+            document.getElementById("d1").style.backgroundColor="blue";
+        }
+    </script>
+</body>
+</html>

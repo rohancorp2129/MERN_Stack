@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting</title>
+</head>
+<body>
+    <!-- Hoisting --- (Raise karna ) Hoisting allows us to initilize and use the variable even before declaring them ,
+
+        var is hoisted , let and const cannot be hoisted 
+
+    whereever use declare "var" at down side also , it will use it like top side . 
+     Hoisting: 
+            Hoisting allows us to initilize and use the variable even before declaring them ,
+            becouse it takes up the declaration of variable to the top of code before starting the execution of code.
+            Hoisting is a default behaviour of javascript , it means to raise up to take up.
+            The normal code writing practice is : 
+                declaration var.
+                initialization var.
+                use var.
+            due to hoisting we can change the way we write the code 
+            Javascript hoists the var. to top of code before execution , So auto the var. get declare initilize and used .
+
+            ex below :
+             while execution it read like 
+             var a;  // declaration
+             a=10;     // initialization
+            console.log(a);   // use
+            
+var is hoisted , let and const cannot be hoisted 
+
+            It is a default behaviour of Js , 
+            It means to raise up to take up 
+            The normal code writing practice is : 
+            declaration var.
+            initialization var.
+            use var.
+
+            due to hoisting we can change the way we write the code 
+            Javascript hoists the var. to top of code before execution , So auto the var. get declare initilize and used .
+
+
+            ex below :
+             while execution it read like 
+             var a;  // declaration
+             a=10;     // initialization
+            console.log(a);   // use
+
+    
+    -->
+    <script>
+        demo();
+        a=10;     // initialization
+        console.log(a);   // use
+
+        var a;  // declaration
+
+        function demo(){
+            console.log("Hello , THis is fun. written at the end of code ");
+        }
+    </script>
+
+    <!-- <script>
+        "Use Script "
+
+        a=10;
+        console.log(a);
+        // var a;
+        let a;
+        // Uncaught ReferenceError aata hain if u use with let or const 
+    </script> -->
+</body>
+</html>

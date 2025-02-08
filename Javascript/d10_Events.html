@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+        #d1{
+
+            width: 100%;
+            height: 350px;
+            border: 1px solid black;
+        }
+        #cdiv{
+            width: 150px;
+            height: 150px;
+            border: 1px solid red;
+            /* make cdiv outside the d1 */
+            position: absolute;
+            top:400px;
+            left: 150px;
+            border-radius: 50%;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <!-- 
+    Event : When some kind of action it is called an event .
+            In Js we can respond to these event using the below mentioned event type :
+
+        1. Mouse
+        2. Keyboard
+        3. Form
+        4. Window
+
+    1. Event : 
+        We use prefix 'on'
+
+        1.onclick : left mouse click button () It is called when lest mouse button is clickedd 
+        2.ondblclick : double click on the element to call the event
+        3.onmouseover : mouse is moved over the element to call the event
+        4.onmouseout : mouse is moved out of the element to call the event
+        5.onmousedown : mouse button is pressed down to call the event
+        6.onmouseup : mouse button is released to call the event
+        7.onmousemove : mouse is moved over the element to call the event
+        8.onmousewheel : mouse wheel is scrolled to call the event
+        9.onblur : element loses focus to call the event
+        10.onfocus : element gets focus to call the event
+
+        11. oncontextmenu: It is called when right mouse button is clicked
+    
+    -->
+    <div id="d1" 
+    onclick="sclick()" 
+    ondblclick="dclick()"
+    oncontextmenu="rclick()"
+    onmouseover="mouseOver()"
+    onmouseout="mouseOut()"
+    onmousedown="mouseDown()"
+    onmouseup="mouseUp()"
+    onmousewheel="mouseWheel()"
+     
+     >
+<!-- Task 8
+mouse event use karke css styling lagana hain , like transform scale, bgchange , width change  ..... 
+    -->
+     <div id="cdiv"></div>
+        <h1 id="message"></h1>
+    </div>
+    <script>
+        // 1. onclick : left mouse click button () It is called when lest mouse button is clickedd
+        function sclick(){
+            document.getElementById("message").innerHTML = "Mouse left button is clicked ";
+            document.getElementById("d1").style.backgroundColor="red";
+        }
+        //2 double clicked 
+        function dclick(){
+            document.getElementById("message").innerHTML = "Mouse double button is clicked ";
+            document.getElementById("d1").style.backgroundColor="blue";
+        }
+        // oncontextmenu ( right click)
+        function rclick(){
+            document.getElementById("message").innerHTML = "Mouse right button is clicked ";
+            document.getElementById("d1").style.backgroundColor="Green";
+
+            }
+        // mouseOver
+        function mouseOver(){
+            document.getElementById("message").innerHTML = "Mouse is moved over the element or child area ";
+            document.getElementById("d1").style.backgroundColor="yellow";
+            }
+        // mouseOut
+        function mouseOut(){
+            document.getElementById("message").innerHTML = "Mouse is moved out the element or child area ";
+            document.getElementById("d1").style.backgroundColor="brown";
+            } 
+        function mouseDown(){
+            document.getElementById("message").innerHTML = "Mouse left button is pressed in  ";
+            document.getElementById("d1").style.backgroundColor="pink";
+        } 
+        function mouseUp(){
+            document.getElementById("message").innerHTML = "Mouse left button is released ";
+            document.getElementById("d1").stylebackgroundColor="black";
+            }
+        function mouseWheel(){
+            document.getElementById("message").innerHTML = "Mouse wheel is scrolled ";
+            document.getElementById("d1").style.backgroundColor="orange";
+        }
+    </script>
+</body>
+</html>

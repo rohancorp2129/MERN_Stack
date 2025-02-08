@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    
+task 2 :
+
+Take 2 var as inWeekend(boolean) and isSunny(boolean)
+
+
+If isWeekend and isSunny are both true then display msg " go out and enjoy!"
+If isWeekend is true and isSunny is false  then display msg " nefflix and chill"
+If isWeekend and isSunny are both false then display msg " You really need to focus on work !" -->
+<script>
+    
+
+let isWeekend = prompt("Is it weekend ? (true/false) : ");
+let isSunny = prompt("Is it sunny ? (true/false) : ");
+
+isWeekend = isWeekend.toLowerCase();
+isSunny = isSunny.toLowerCase();
+
+// Convert string to boolean
+isWeekend = isWeekend == "true" ? true : isWeekend == "false" ? false : null;
+isSunny = isSunny == "true" ? true : isSunny == "false" ? false : null;
+
+// Check for invalid input
+if (isWeekend == null || isSunny == null) {
+    document.write("<h1> Invalid input ! </h1>");
+}
+else {
+    if (isWeekend && isSunny) {
+        document.write("<h1> Go out and enjoy ! </h1>");
+    }
+    else if (isWeekend && !isSunny) {
+        document.write("<h1> Netflix and chill</h1>");
+    }
+    else if (!isWeekend && !isSunny) {
+        document.write("<h1> You really need to focus on work ! </h1>");
+    }
+    else {
+        document.write("<h1> Go to work ! </h1>");
+    }
+}
+
+
+</script>
+</body>
+</html>

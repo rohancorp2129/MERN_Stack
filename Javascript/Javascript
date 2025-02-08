@@ -1,0 +1,75 @@
+<!-- Javascript history : -->
+Javascript is a object -oriented programming language.which is used by developers for client side as welll as server
+side scripting.
+
+this is a scripting language that is used to create and control dynamic website content.
+
+It is a powerfull scriptigng language which gets executed from top to bottom works
+
+The difference between javascript and other programming languages is that javascript code gets compiled in runtime ,
+unlike other languages which explicitely compile the code and then execute separately
+
+Javascript is not a compiled language but it is translated language , that means the code gets translated in the browser
+that the time of execution . The translater for this code comes in-built in the browser .
+
+History :
+Developed in 1995 by Brendon Eich in just 10 days in Netscape communication 
+It was initially called mocha, then livescript and final javascript. The name java was included only for marketing purpose
+
+It was later handle over to ECMA (European Computer Manufacturer Assosiation) which standardized javascript under ECMA-262.
+
+<!-- General Features : -->
+- Structured Programming language just like C.
+- It is a weakly types/Dynamic/Loosely typed language.
+- It is a light-weighted (Taking less RAM)and interpreted language(runtime )
+- It is a case-sensitive language.
+- It is a client-side scripting language.
+- It is a platform-independent language.(It can run on any OS)
+- It provides users with good control over the browser.
+
+<!-- Java vs Javascript : -->
+ Java :
+ - Java is class based language.
+ - Java is a multi-threaded language 
+ - It consumed more memory as compared to javascript
+ - Class Based
+ - Compiled language 
+ - Java is used to build standalone app, and enterprise level app. 
+
+
+
+Javascript :
+- is a event based language that means it can be triggered by events like onclick, onmouseover, onsubmit etc.
+- Javascript is a single threaded language 
+- It consumes less memory as compared to java
+- Object based 
+- interpreted language
+- It is used to build web app, Mobile app , etc
+
+<!-- Examples of Js: -->
+    - Amazon
+    - Flipkart
+    - LinkedIn
+    - AngryBirds
+    - Netflix
+    - Uber
+    - Duolingo
+
+<!-- Application of Js: -->
+    - Client side scripting 
+    - Server side scripting
+    - Game Development
+    - Dynamic dropdowns
+    - Displaying pop ups and dialog boxex
+    - Displaying Clocks
+
+<!-- Writing Javascript : -->
+    Inliine : Written in the element body itself, used for responding to the event with that element 
+    Internal : Written in the html document.
+    External : Written in a separate file and linked to the html document.
+
+<!-- Output Possibilities in Js -->
+1. console.log()
+2. alert()
+3. document.write()
+4. innerHTML

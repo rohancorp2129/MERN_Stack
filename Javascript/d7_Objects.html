@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="createNewStudent()">Create Student </button>
+    <button onclick="PrintStudent()">Print Student </button>
+    <!-- 
+    Objects in Js : 
+        It is entity which stores large amount of data .
+        It is a collection of key value pairs.
+        Object can hold similar or dissimilar type of data.
+        The indexing takes place based on " kesy ".
+        Javascript is a object based language 
+
+        Creating Objects :
+                1. Literal method 
+                    let obj1={
+                    id : 101,
+                    name : "Rahul" ,
+                    age : 25 ,
+                    address:{
+                    street : "street1",
+                    city : "city1",
+                    }
+                    
+                    };
+                2. Creating Instance 
+                3. Using Constructor
+ Constructor : It is a special fun which is used to initilize values to the objects
+    -->
+    <script>
+        let std;
+
+        // Literal object 
+        let obj1 = {
+            id: 101,
+            name: "Rahul",
+            age: 25,
+            address: {
+                street: "street1",
+                city: "city1",
+            }
+
+        };
+        console.log(obj1);
+        console.log("************************");
+        // Creating Instance
+
+        let obj2 = new Object();
+        obj2.id = 102;
+        obj2.name = "Rohan";
+        obj2.age = 23;
+        obj2.address = {
+            street: "street2",
+            city: "city2",
+        };
+
+        console.log(obj2);
+        console.log("************************");
+        // Using Constructor 
+        function Student() {
+            this.id = 103;
+            this.name = "Taufiq";
+            this.age = 23;
+            this.address = {
+                street: "street3",
+                city: "city3",
+            };
+        }
+        let obj3 = new Student();
+        console.log(obj3);
+        console.log("************************");
+
+
+        console.log(`Name of student 1: ${obj1.name} \n Name of student 2: ${obj2.name} \n Name of student 3: ${obj3.name}`);
+
+
+        let obj4={
+            id:104,
+            name:"Raj",
+            age:25, 
+            skills : ["HTML", "CSS", "Bootstrap"],
+            address:{
+                street:"street4",
+                city: "Pune",
+            }
+
+        };
+        console.log(obj4);
+        console.log(obj4.address.city);
+        
+        
+        console.log("************************");
+
+        for(let keys in obj4){
+            console.log(`${keys} : ${obj4[keys]}`);
+        }
+        console.log("************************");
+        for(let keys in obj4.address){
+            console.log(`${keys} : ${obj4[keys]}`);
+        }
+
+        console.log("*********************************************");
+        obj4.name="XYZ";
+
+        function createNewStudent(){
+            let id= +prompt("Enter Id");
+            let name=prompt("Enter Name");
+            let age=+prompt("Enter Age");
+            let address={
+                street:prompt("Enter Street"),
+                city:prompt("Enter City"),
+                }
+            std = new Student(this.id,this.name,this.age,this.address);
+        }
+        function PrintStudent(){
+            for(let i in std){
+                console.log(`${i} : ${std[i]}`);
+            }
+        }
+
+
+        let obj5={
+            make : "Apple",
+            model : "MacBook",
+            year : 2020,
+            price : 15000.00,
+            features:{
+                color : "Silver",
+                ram : 16,
+                processor : "i7",
+                },
+            displayinfo: function getInfo(){
+                console.log(` \n${this.make} \n${this.model} \n${this.year} \n${this.price} \n${this.features.color}`)
+            }
+        };
+        obj5.displayinfo();
+    </script>
+</body>
+
+</html>

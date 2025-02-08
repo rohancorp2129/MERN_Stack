@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="Enter Your Name"></label>
+    <input type="text" id="name" onkeypress="displayData()">
+    <h1 id="message"></h1>
+    <script>
+        function displayData() {    
+          let nm=  document.getElementById("name").value;
+          let msg = "Hello, " + nm + "!";
+        }
+    </script>
+
+    
+</body>
+</html>

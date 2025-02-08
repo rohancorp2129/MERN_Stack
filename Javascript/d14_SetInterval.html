@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    setInterval : It execute the given fun repeatedly after certain interval .
+                 Definite time ke bad call karte rehta hain(repeatedly) 
+
+        syntax : 
+            swtInterval(hand;er/function , time_in_ms)
+    
+    -->
+            <button onclick="startCount()">Start</button>
+            <button onclick="stopCount()">Stop</button>
+            <h1 id="count">0</h1>
+            <script>
+                var x;
+                let startCount=()=>{
+                    let ct=0;
+                   x=  setInterval(()=>{
+                        ct++;
+                        // console.log(ct);
+                        document.getElementById("count").innerHTML=ct;
+                    },1000);
+                }
+
+                function stopCount(){
+
+                    clearInterval(x);
+                    console.log("Count Stopped!");
+                }
+                // setInterval(hello,2000)
+
+                // function hello(){
+                //     console.log("Hello");
+                // }
+
+                // setInterval(() => {
+                //     console.log("This is a setinterval");
+                //     // alert("Hi");
+                // }, 10000);
+            </script>
+</body>
+</html>

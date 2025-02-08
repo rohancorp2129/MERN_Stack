@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    String : String is a primary datatype , 
+            IT is a collection of charachers(alphabate , symbpl, numbers)
+            it is immutable
+            IT is denoted by '' or ""
+            Just like an array , string also has numeric indexing which starts from zero
+
+
+        Creating String :
+
+        1. Literal Stirng 
+        2. Creating as instance
+
+    
+    Methods of String :
+    1. length() : returns the length of the string
+    2. slice(starting index , last endex ) :
+    3. substring(): not allowed -ve index , work like slice 
+    4. toUpperCase() : converts the string to upper case
+    5. toLowerCase() : converts the string to lower case
+    6. trim() : removes the leading and trailing spaces
+    7. split(char/symbol/..) : splits the string into array of strings
+    8. join() : joins the array of strings into a single string
+    9. substr(start_index, no_of_index) : same like substring , but not allowed -ve index 
+    10. indexOf(character) : it gives us first given char's index  , It is case Sensetive 
+                            return -1 if char not available 
+    11. concat():
+    12. replace():
+    13. lastIndexOf(character):It gives us last given char's index  , It is case Sensetive 
+                            return -1 if char not available 
+    14. charAt(index_position);
+    15. charCodeAt(char) : returns ASCII code of character available at that index position , 
+                        return NAN ( not a numer ) of index posioion not found 
+
+    16. includes(char/str): it retunrs true/false depending upon the availibility ......
+    17. replace(char to find , char to replace)
+    18. pad() : if you wanna increase length , 
+            padEnd(how many length total , inserrt char at end)
+            padStart(how many length total , inserrt char at start)
+            
+// Immutability of string : declare as const . 
+
+    -->
+        <script>
+            // 1. Literal String
+            let str = "Rohan"; 
+            console.log(str);
+            console.log(typeof(str));  // String 
+
+            // Creating an instance
+
+            let str2= new String("Rahul");
+            console.log(str2);
+            console.log(typeof(str2)); // Object 
+
+            let str3="Javascript";
+            let strsmall="lower";
+            let strupper="UPPER";
+            console.log("*****************************");
+            console.log(str3.length);
+            console.log("*****************************");
+            console.log(str3.slice(2,6)); // vasc
+            console.log(str3.slice(-6,-2)); // scri
+
+            console.log("*****************************");
+            console.log(str3.substring(2,6)); // vasc
+            console.log("*****************************");
+            console.log(str3.substr(1,5)); //avasc
+            console.log(str3.substr(6,2)); // ri
+
+            console.log("*****************************");
+            console.log(strsmall.toUpperCase());
+            console.log(strupper.toLowerCase());
+
+            console.log("*****************************");
+            console.log(strsmall.concat(strupper));
+
+            console.log("*****************************");
+            console.log(str3.indexOf("a")); // 0  
+            console.log(str3.lastIndexOf("a"));  
+            console.log("*****************************");
+
+            console.log(str3.charAt(2));
+            console.log("*****************************");
+// let str3="Javascript";
+let str4="Javascript/is/intresting/love/it";
+
+            console.log(str3.charCodeAt(4));
+            console.log("*****************************");
+
+            console.log(str4.split("/"));
+            console.log(str4.split("")); // split each char
+
+            let name="rohan b rakh";
+            
+            // rakh b rohan
+            console.log(name.split(" ").reverse().join(" ")); // rakh b rohan 
+
+            let str5="  javascript  ";
+            let str6="javascript";
+            console.log(str5 === str6); // false
+            console.log(str5.trim());
+            console.log(str5.trimStart());
+            console.log(str5.trimEnd());
+            console.log(str5.trimStart().trimEnd());
+
+            console.log("*****************************");
+            console.log(str5.includes('e'));
+            console.log(str5.includes('a'));
+            console.log("*****************************");
+let str7=" I am Rohan ";
+            console.log(str7.replace("Rohan", "Guest"));
+            console.log("*****************************");
+            console.log(str7.padEnd(20,"#"));
+            console.log(str7.padStart(20,"#"));
+
+            console.log("*****************************");
+
+let str8="javascript";
+            
+
+
+
+            
+
+
+
+        </script>
+</body>
+</html>

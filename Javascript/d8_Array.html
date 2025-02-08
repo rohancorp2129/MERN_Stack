@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 
+    Array : it is a non premitive datatype .
+    it is used to store similar or dissimilar type of data.
+    IN an array we store or retrive data using numerical indexing
+
+
+    Creating an Array : 
+    1. Literal method 
+        var arr1=[10,20];
+
+    2. Creating an instance
+    var arr2=new Array(10,20);
+
+    Array method : 
+        1. arr_name.length : It return the no of elements in the array 
+        2. arr_name.push : It insert an element sto the end of array and
+                            return the length of modified array 
+        3. arr_name.pop(): It remove the last element from the array and 
+                            return removed element 
+        4. arr_name.shift(): It remove the first element from the array and
+                             return removed element
+        5. arr_name.unshift(): It insert an element at the beginning of array and
+                                 return the length of modified array 
+        6. arr_name.splice(): IT removed the elenments from anywhere  in the middle of array as per requirement 
+                
+                        arr.splice(starting_index, no_of_elements );
+                        It removed the given no of elements staring from given starung index
+                
+                        arr.name.splice(starting_index,no_of_ele, element_to_be_added);
+                        It remove elements are replace eith given elements 
+        7. arr_name.indexOf(element): It return the index of the element in the array
+        8. arr_name.lastIndexOf(element): It return the last index of the element in the array
+                    
+    -->
+    <script>
+        // Creating an array using literal method
+        // let arr = [1, 2, 3, 4, 5];
+        // let arr2 =["rohan", "rahul","taufiq","raj","rutuja"];
+
+        // let a; // undefined 
+        // let obj={
+        //     id : 11,
+        //     name : "rohan",
+
+        // };
+        // let arr3 = [101,"ABC",true,a,["a","b","c"],obj];
+
+        // console.log(arr3);
+
+
+
+        // Creating an array using an instance
+
+        // let arr4 = new Array();
+
+        // // Storing data in array 
+        // // Index start from 0
+        // arr4[0] = "Pune";
+        // arr4[1] = "Mumbai";
+        // arr4[2] = "Nagpur";
+        // arr4[3] = "Aurangabad";
+        // arr4[4] = "Kolhapur";
+        // arr4[5] = "Satara";
+
+        // console,log(arr4);
+
+        // let arr1 = new Array();
+        // for(let i=0;i<5;i++){
+
+        //     arr1[i]=prompt("enter data to be stored in array ");
+        // }
+
+        // let arr1 = ["Rohan","Rahul","Taufiq","Raj"];
+        // console.log(arr1);
+        // Iterating array using normal for loop
+        // for(let i=0;i<arr1.length;i++){
+        //     console.log(arr1[i]);
+        // }
+        // // Iterating array using for of loop
+        // for(let val of arr1){
+        //     console.log(val);
+        // }
+        // Iterating array using for in loop 
+        // for(let values in arr1){
+        //     console.log(`${values} : ${arr1[values]}`);
+        // }
+
+        // arr1[3]="RAJ";
+        // console.log("****************");
+        // for(let values in arr1){
+        //     console.log(`${values} : ${arr1[values]}`);
+        // }
+
+        // ********************************************************
+
+        // Array Method
+        let arr1 = ["Rohan","Rahul","Taufiq","Raj","Rohan","Rutu","rishi"];
+        console.log(arr1);
+        // arr.length
+        console.log(arr1.length); // length 
+        console.log(arr1[0]); // accessing 0th element
+        console.log(arr1[arr1.length-1]); // accessing last element
+
+        // arr.push // to insert value at the end 
+        // arr1.push("Shiv");
+        console.log(arr1.push);
+        console.log(arr1);
+
+        // arr1.pop();
+        console.log(arr1.pop());
+        console.log(arr1);
+
+        // arr.unshift
+        // arr1.unshift("RAM");
+        console.log(arr1.unshift("RAM")); // 6
+        console.log(arr1);
+
+        // arr.shift
+        console.log(arr1.shift()); // it return removed element 
+        console.log(arr1);
+
+        // arr.splice()
+        // arr1.splice(1,2); // from index 1 remove 2 elements( 1,2 index removed )
+        // arr1.splice(1,2,"Tejaswi","Nilofer");// remove 1 and 2 element and add two elements 
+        console.log(arr1.splice(1,2,"Tejaswi","Nilofer"));
+        console.log(arr1);
+
+        // arr.indexOf
+        console.log(arr1.indexOf("Sachin")); // -1 cause the element is not there 
+        console.log(arr1.indexOf("Rohan")); // 0 cause the element is there at index 0 even it present on different also 
+
+
+        // arr1.lastIndexOf
+        console.log(arr1.lastIndexOf("Rohan")); // 5 cause the element is there at index
+
+    </script>
+</body>
+</html>

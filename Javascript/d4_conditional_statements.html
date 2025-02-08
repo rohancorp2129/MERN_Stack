@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Control Statement : It is used to control the flow of the program
+
+    std1=[10,20,30,40,50];
+
+    1. Conditional Statements : (works only once) It is used to write the conditional code
+        They check for given condition and get executed only once .
+
+    2. Iterative loops : (it works in loop - repetative) It is used to write the repetitive code
+        They are used for performing some task repeatedly.
+
+
+    *******************************************************************************
+
+
+    Conditional Statements :
+
+    1. if :
+    2. else
+    3. else if
+    4. switch
+
+    1. if : It is used to check the condition and execute the code if the condition is true
+        Syntax : 
+            if(condition){
+                // code
+            }
+        ex : 
+            var a = 10;
+            if(a>5){
+                console.log("A is greater than 5");
+            }
+    
+    2. else : It is used to execute the code if the condition is false
+    Syntax : 
+        if(condition){
+            // code
+        }else{
+            // code
+        }
+    ex :
+    var a = 10;
+    if(a>15){
+        console.log("A is greater than 15");
+    }else{
+        console.log("A is less than 15");
+    }
+
+    3. else if : It is used to check the multiple conditions
+    Syntax : 
+        if(condition){
+            // code
+        }else if(condition){
+            // code
+        }else{
+            // code
+        }
+    ex :
+    var a = 10;
+    if(a>15){
+        console.log("A is greater than 15");
+    }else if(a>5){
+        console.log("A is greater than 5");
+    }else{
+        console.log("A is less than 5");
+    }
+
+    4. switch : It is used to check the multiple conditions
+    Syntax :
+        switch(expression){
+            case value1:
+                // code
+                break;
+            case value2:
+                // code
+                break;
+            case value3:
+                // code
+                break;
+            default:
+                // code
+        }
+    //             
+
+    ex :
+    var a = 10;
+    switch(a){
+    case 10:
+        console.log("A is 10");
+        break;
+    case 20:
+        console.log("A is 20");
+        break;
+    case 30:
+        console.log("A is 30");
+        break;
+    default:
+        console.log("A is not 10, 20, 30");
+    }
+
+    -->
+
+    <script>
+        // if 
+
+        // let age =+prompt("Enter your age : ");
+        // if(age>=18){
+        //     document.write(`<h1> You are eligible for voting </h1>`);
+        // }
+        // else{
+        //     document.write(`<h2> You are not eligible for voting </h2>`);
+        // }
+
+        // Using turnary operator
+        // document.write(`${age>=18 ? "<h1> You are eligible for voting</h1>" : "<h1> You are not eligible for voting </h1>"}`);
+
+        // *****************************************************************************
+
+        // let marks =+prompt("Enter your marks : ");
+        // if(marks>=80){
+        //     docwment.write(`<h1> You are Scored A grade </h1>`);
+        // }
+        // else if(marks>=60 && marks<80){
+        //     document.write(`<h2> You are Scored B grade </h2>`);
+        // }
+        // else if(marks>=40 && marks<60){
+        //     document.write(`<h3> You are Scored C grade </h3>`);
+        // }
+        // else{
+        //     document.write(`<h1> You are Failed  </h1>`);
+        // }
+
+        // *****************************************************************************
+
+
+        let color =+prompt("Select a color  : \n 1. Red \n 2. Green \n 3. Blue ");
+        // if(color==1){
+        //     document.body.style.backgroundColor="red";
+        // }
+        // else if(color==2){
+        //     document.body.style.backgroundColor="green";
+        // }
+        // else if(color==3){
+        //     document.body.style.backgroundColor="blue";
+        // }
+        // else{
+        //     document.write(`<h1> Invalid color </h1>`);
+        // }
+
+        switch(color){
+            case 1:
+                document.body.style.backgroundColor="red";
+                break;
+            case 2:
+                document.body.style.backgroundColor="green";
+                break;
+            case 3:
+                document.body.style.backgroundColor="blue";
+                break;
+            default:
+                document.write(`<h1> Invalid color </h1>`);
+            
+        }
+
+    </script>
+
+
+<!-- 
+task 1 :
+
+
+pss user . check both is correct 
+
+
+// Write a code which will take two inputs from user , username and password 
+the code will check if username matches 'admin' , it is same , it will check password ' 1234'
+
+If the password oes not match , it will give ewrror that pass is incorrect 
+if hte pass matched , it will display " logged in successfully !"
+
+if the uname does not found 'admin ' it will display ' user not found'
+
+
+
+
+
+
+task 2 :
+
+Take 2 var as inWeekend(boolean) and isSunny(bi=oolean)
+
+
+If isWeekent and isSunny are both true then display msg " go out and enjoy!"
+If isWeekent is true and isSunny is false  then display msg " nefflix and chill"
+If isWeekent and isSunny are both false then display msg " You need to work !"
+
+-->
+</body>
+</html>

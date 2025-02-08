@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    setTimeout : It is used to starting the execution of fun after certain given interval .
+                execute after some set time only once 
+    setInterval : execute after some set time repeatedly
+    syntax :
+        setTimeout(handler/fun , time_in_ms)
+
+
+        
+        this moment won't return 
+        date object 
+        get hour 
+        get minute 
+        get sec 
+         am pm
+
+         google homepage   google drive whatsapp youtube gmail 
+
+
+         extention 
+
+
+
+         clock - stop watch 
+         start from 0 
+         stop hona chahiye 
+          
+         button - start stop reset
+
+    -->
+        <h1 id="res"></h1>
+        <script>
+            // setTimeout(hello,5000);
+
+            // function hello(){
+            //     console.log("Hello");
+            // }
+
+            let num=0;
+            setTimeout(() => {
+                console.log("setInterval staring now ");
+               setInterval(() => {
+                num +=20;
+                document.getElementById("res").innerHTML=num;
+               }, 1500); 
+            }, 3000);
+        </script>
+</body>
+</html>

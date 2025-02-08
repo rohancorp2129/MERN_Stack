@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Typecasting : It is used to convert the one datatype to another datatype
+
+    // +prompt : it is used to convert the string to number 
+    // Number() : it is used to convert the string to (whole) decimal number
+    // parseInt() : it is used to convert the string to number it ignore points values 
+
+
+
+
+
+    
+    1 Modifying the prompt
+    2. Number() : it consider the digits after a numeric character . 
+                IT can be used to decimal values , 
+    -->
+    <script>
+        // let nm=prompt("Enter your name : ");
+        // document.write(`<h1> Hello ${nm} ! Good Afternoor </h1>`);
+
+        // console.log(typeof nm);  // string
+
+        // let num1 = prompt("Enter First number : ");
+        // let num2 = prompt("Enter Second number : ");
+        // // Add two numbers
+        // let sum1=num1+num2; // 1020 cause datatype is string
+        // let sum = parseInt(num1) + parseInt(num1);
+        // document.write(`<h1> Sum of two numbers : ${num1+num2} </h1>`);
+        // document.write(`<h1> Number : ${num1} </h1>`);
+        // console.log(typeof num1);  // string
+
+
+        //  MOdifying the prompt
+
+        // +prompt() : it is used to convert the string to number
+        let num1 =prompt("Enter First number : ");
+        console.log(` ${num1} is of type : ${typeof num1}`); // string
+
+        // Number() : it is used to convert the string to number
+        let num2 = Number(num1);
+        console.log(` ${num2} is of type : ${typeof num2}`); // number
+
+        // parseInt() : it is used to convert the string to number
+        let num3 = parseInt(num1);  // it consider the digits after a numeric character . IT can be used to decimal values ,
+        console.log(` ${num3} is of type : ${typeof num3}`); // number
+        
+    </script>
+</body>
+</html>

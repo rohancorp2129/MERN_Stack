@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templete Literal </title>
+</head>
+<body>
+    <!-- 
+    // ( ` ` ) backtick : It is used to write the string in multiple line
+    -->
+
+    <script>
+        // Old conventional way to write the string in multiple line
+        document.write("This is a modern js feature to write the string in a multiple line");
+        document.write("<br>");
+        document.write("This is a second line");
+        document.write("<hr/>");
+
+        // Modern way to write the string in multiple line
+        document.write(
+            "Hi rohan rakh this side "+
+            "<br>"+
+            "I am a MERN STACK developer "+
+            "<br>"+
+            "I am a full stack developer"
+        );
+        document.write("<hr/>");
+        
+        //reference assignment 
+       
+        let std1="this is a Rohan Rakh";
+        let std2="this is a Rahul Rakh";
+        document.write(std1+"<br>"+std2+"<br>");
+
+        // Modern way to write the string in multiple line
+        // Templete Literal
+        // ( ` ` ) backtick : It is used to write the string in multiple line
+        document.write(`
+          <h1>  Hi , Rohan Rakh this side </h1>
+            <br>
+           <p> I am a MERN STACK developer  and i am learning technology from speedup infotech ltd. pune , this is a good classes .</p>
+            <br>
+            I am a full stack developer
+        `);
+
+
+        let nm="Rohan";
+        let ag=25;
+        let ct="Pune";
+
+        document.write(`
+            <h1> Name : ${nm} </h1>
+            <h1> Age : ${ag} </h1>
+            <h1> City : ${ct} </h1>
+        `);
+
+    </script>
+</body>
+</html>

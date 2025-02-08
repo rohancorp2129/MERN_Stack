@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #000;
+        }
+        .container {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-control {
+            background-color: #444;
+            color: #fff;
+            border: 1px solid #666;
+        }
+        .form-control:focus {
+            background-color: #555;
+            border: 1px solid #888;
+        }
+        .form-control::placeholder {
+            color: #ccc;
+        }
+        .btn {
+            padding: 15px 40px;
+            border: none;
+            outline: none;
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+            z-index: 0;
+            border-radius: 12px;
+        }
+        .btn::after{
+            content: "";
+            z-index: -1;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #333;
+            top: 0;
+            left: 0;
+            border-radius: 10px;
+        }
+        .btn::before{
+            content: "";
+            background: linear-gradient(
+                45deg,
+                #ff0000,#ff7300,#fffb00,#48ff00,
+                #00ffd5,#002bff,#ff00c8,#ff0000
+            );
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 600%;
+            z-index: -1;
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            filter: blur(8px);
+            animation: glowing 20s linear infinite;
+            transition: opacity .3s ease-in-out;
+            border-radius: 10px;
+            opacity: 0;
+        }
+        @keyframes glowing{
+            0% {background-position: 0 0;}
+            50% {background-position: 400% 0;}
+            100% {background-position: 0 0;}
+        }
+        .btn:hover::before{
+            opacity: 1;
+
+        }
+        .btn:active::before{
+            background: transparent;
+        }
+        .btn:active{
+            color: #000;
+            font-weight: bold;
+        }
+        table {
+            background-color: #333;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #666;
+            padding: 10px;
+            color: #fff;
+        }
+        #loading {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            z-index: 1000;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .spinner-border {
+            border: 4px solid rgba(255, 255, 255, 0.5);
+            border-top: 4px solid #fff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .progress {
+            width: 100%;
+            height: 10px;
+            margin-top: 10px;
+        }
+        .progress-bar {
+            background-color: #fff;
+            animation: progress 2s linear infinite;
+        }
+        @keyframes progress {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+        #confirmation-message {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            z-index: 1000;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center" style="width: 50%; margin: 50px auto;">
+        <h1 class="text-white">Student Data Form</h1>
+        <form id="student-form" onsubmit="return confirm('Are you sure you want to submit this form?') && submitForm()">
+            <div class="form-group">
+                <label for="name" class="text-white" title="Please enter your full name.">Name:</label>
+                <input type="text" id="name" name="name" required onfocus="focusEvent('name', this.value)" onblur="blurEvent('name', this.value)" onchange="changeEvent('name', this.value)" class="form-control" placeholder="Enter your name" style="color: #fff;" pattern="[a-zA-Z ]+" title="Only letters and spaces are allowed">
+            </div>
+            <div class="form-group">
+                <label for="age" class="text-white" title="Please enter your age.">Age:</label>
+                <input type="number" id="age" name="age" required onfocus="focusEvent('age', this.value)" onblur="blurEvent('age', this.value)" onchange="changeEvent('age', this.value)" class="form-control" placeholder="Enter your age" style="color: #fff;" min="18" max="100" title="Age must be between 18 and 100">
+            </div>
+            <div class="form-group">
+                <label for="grade" class="text-white" title="Please enter your grade.">Grade:</label>
+                <input type="text" id="grade" name="grade" required onfocus="focusEvent('grade', this.value)" onblur="blurEvent('grade', this.value)" onchange="changeEvent('grade', this.value)" class="form-control" placeholder="Enter your grade (A, B, C, or D)" style="color: #fff;" pattern="[ABCDabcd]" title="Only A, B, C, or D are allowed">
+            </div>
+            <div class="form-group">
+                <label for="email" class="text-white" title="Please enter your email address.">Email:</label>
+                <input type="email" id="email" name="email" required onfocus="focusEvent('email', this.value)" onblur="blurEvent('email', this.value)" onchange="changeEvent('email', this.value)" class="form-control" placeholder="Enter your email" style="color: #fff;" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Invalid email address">
+            </div>
+            <div class="form-group">
+                <label for="address" class="text-white" title="Please enter your address.">Address:</label>
+                <textarea id="address" name="address" required onfocus="focusEvent('address', this.value)" onblur="blurEvent('address', this.value)" onchange="changeEvent('address', this.value)" class="form-control" placeholder="Enter your address" style="color: #fff;" pattern="[a-zA-Z0-9\s,.-]+" title="Only letters, numbers, and special characters are allowed"></textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <h2 class="text-white">Student Data Table</h2>
+        <table id="student-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Grade</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody id="student-data-body">
+                <!-- Student data will be dynamically inserted here -->
+            </tbody>
+        </table>
+        <div id="loading">
+            <div class="spinner-border text-light" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+            </div>
+        </div>
+        <div id="confirmation-message">Data submitted successfully!</div>
+    </div>
+    <script>
+        let studentData = [];
+        let id = 1;
+        let inputValues = {};
+
+        function displayStudentData() {
+            const tableBody = document.getElementById('student-data-body');
+            tableBody.innerHTML = ''; // Clear existing data
+
+            studentData.forEach(student => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${student.id}</td>
+                    <td>${student.name}</td>
+                    <td>${student.age}</td>
+                    <td>${student.grade}</td>
+                    <td>${student.email}</td>
+                    <td>${student.address}</td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        function submitForm() {
+            const name = document.getElementById('name').value;
+            const age = document.getElementById('age').value;
+            const grade = document.getElementById('grade').value;
+            const email = document.getElementById('email').value;
+            const address = document.getElementById('address').value;
+
+            // Check for duplicate entries
+            const isDuplicate = studentData.some(student => student.name === name && student.age === age && student.grade === grade && student.email === email && student.address === address);
+            if (isDuplicate) {
+                alert('Duplicate entry detected. Please enter unique data.');
+                return false;
+            }
+
+            studentData.push({ id: id++, name, age, grade, email, address });
+            displayStudentData();
+
+            // Clear the form document.getElementById('student-form').reset();
+            document.getElementById('loading').style.display = 'block'; // Show loading animation
+
+            setTimeout(() => {
+                document.getElementById('loading').style.display = 'none'; // Hide loading animation
+                document.getElementById('confirmation-message').style.display = 'block'; // Show confirmation message
+                setTimeout(() => {
+                    document.getElementById('confirmation-message').style.display = 'none'; // Hide confirmation message after a delay
+                }, 3000);
+            }, 2000); // Simulate a delay for loading
+
+            return false; // Prevent form submission
+        }
+
+        function focusEvent(field, value) {
+            console.log(`${field} focused with value: ${value}`);
+        }
+
+        function blurEvent(field, value) {
+            console.log(`${field} blurred with value: ${value}`);
+        }
+
+        function changeEvent(field, newValue) {
+            const oldValue = inputValues[field] || 'No previous value';
+            inputValues[field] = newValue;
+            console.log(`${field} changed from ${oldValue} to ${newValue}`);
+        }
+    </script>
+</body>
+</html>

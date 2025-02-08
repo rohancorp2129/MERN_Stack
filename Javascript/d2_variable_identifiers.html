@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and identifiers </title>
+</head>
+<body>
+    <!-- 
+    Varibales :
+            These area used to store data,
+            It actually alllocated some space in memory for the data 
+        
+            Variable - is made up of a declarator and an identifier .
+
+        var a =10 ;  //   "var" is a (declarator) and  "a" is an identifier
+
+        Rules to write identifier  : 
+            1. It should not contain any symbol, except for '_' and '$' 
+            2. It should not start with a number but it can end with number
+                The name of an identifier should not be number 
+            3. If the name of identifier is made of two numbers , we cant use between them.
+                Insted we can use '_' camelcasing or pascalcasing 
+                camelcasing : first letter of first word should be small and first letter of second word should be capital(rohanRakh)
+                Pascalcasing : first letter of first word should be capital and first letter of second word should be capital (RohanRakh)
+
+            4 The name of identifier should not be reserved keyword ( var if , var let , let for ---- Not allowed  )
+
+
+
+    Declarators : 
+
+        These are reserved keywords of Javascript 
+
+
+        1. var :
+                This is from the old javascript 
+                It is a global scope declarator 
+                re-declaration is allowed
+                re- Initilization is allowed
+        
+        2. let 
+                It is a feature from Modern Js ( ES6)  ECMAScript
+                It is block scope declarator
+                re-declaration is not allowed
+                re- Initilization is allowed
+                not hoisted
+
+
+        
+        3 const :
+                This is a feature from Modern Js ( ES6)
+                It is block scope declarator
+                It can not be re- Initilized nor re-declared
+        
+        
+        -->
+        <script>
+            
+
+            // console.log(5+20);
+
+
+
+            // var a=20;
+            // console.log(a); //20
+
+            // if (true){
+            //     var a=30;
+            //     console.log(a); //30
+
+            // }
+            // console.log(a); // 30 due to var is global scope  even we delete var a=20; line it should be 30 
+
+
+
+
+            // var a=10;  // declaration 
+            // var a=50;  // re-declaration 
+
+            // a=100; // re- Initilization 
+            // console.log(a); //50
+
+
+            // var num=30;
+            // console.log(num); //30
+
+            // function demo(){
+            //     var num=150;
+            //     console.log(num); //150
+            // }
+            // console.log(num); //30   before call fun.
+
+            // demo();    // 150  
+            // console.log(num); //30 not 150 cause fun is local scope 
+
+            // while calling a function this value is only for that fun. outside the function it will not affect 
+            // while executing if , var is global even after {} same value will be print
+
+
+            // ***************************
+
+            // let a=10;
+            // console.log(a); //10
+
+            // a=30;    // re- Initilization
+            // console.log(a); //30
+
+            // let a=50 ; // error : Identifier 'a' has already been declared 
+            //  Re- declaration is not allowed in let.
+
+            // if(true){
+            //     let a=50;   // re - declaration is allowed in let inside the block only 
+            //     // a=60; // re- Initilization
+            //     console.log(a); //50
+            // }
+            // console.log(a); //30
+
+// IQ 2 : What is the difference between var and let (inside fun ) ? 
+            // function demo(){
+            //     let a=100;
+            //     console.log(a); //100
+            // }
+            // demo(); //100
+            // console.log(a); //30
+
+
+            // ***************************
+
+            const a=100;
+            // num=120;    // Not allowed .
+            // const a=200;   // Not allowed , will give error while execution  
+            console.log(a); //100
+
+            if(true){
+                const a=200;
+                console.log(a); //200
+            }
+            //////
+        
+        </script>
+</body>
+</html>
