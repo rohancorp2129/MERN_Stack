@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .nav-links {
+            display: flex; /* Use flexbox for horizontal layout */
+            justify-content:center ; /* Center the buttons */
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        /* Different colors for each button */
+        .nav-links a:nth-child(1) {
+            background-color: #007BFF; /* Blue */
+        }
+        .nav-links a:nth-child(2) {
+            background-color: #28a745; /* Green */
+        }
+        .nav-links a:nth-child(3) {
+            background-color: #ffc107; /* Yellow */
+        }
+        .nav-links a:nth-child(4) {
+            background-color: #dc3545; /* Red */
+        }
+        nav a:hover {
+            opacity: 0.8; /* Slightly fade on hover */
+        }
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            max-width: 800px;
+            margin: 0 auto 20px; /* Center paragraphs and add bottom margin */
+            padding: 0 20px; /* Add padding for better readability */
+            text-align: justify; /* Justify the text */
+        }
+        hr {
+            margin: 20px 0;
+        }
+        .go-top {
+            display: block; /* Make the link a block element */
+            text-align: center; /* Center the link */
+            margin: 20px 0; /* Add margin for spacing */
+            color: blue;
+            font-weight: bold;
+            animation: fadeIn 1s ease-in; /* Fade-in animation */
+            transition: transform 0.3s; /* Transition for hover effect */
+        }
+        .go-top:hover {
+            transform: scale(1.1); /* Scale up on hover */
+        }
+        /* Animation styles */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        header, nav, .container {
+            animation: fadeIn 1s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="top">Fruits</h1>
+        <p>Fruits are nature's candy, packed with essential nutrients, vitamins, and minerals. They are not only delicious but also play a vital role in maintaining a healthy diet. Incorporating a variety of fruits into your meals can boost your immune system, improve digestion, and provide your body with the energy it needs to thrive.</p>
+    </header>
+    
+    <nav>
+        <div class="nav-links">
+            <a href="#Definition">Definition</a>
+            <a href="#Nutrition">Nutrition</a>
+            <a href="#Types">Types of Fruits</a>
+            <a href="#facts">Other Facts</a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h2 id="Definition">Definition</h2>
+        <p>A fruit is the part of a flowering plant that contains seeds. Fruits can be fleshy or dry, and can have thin, tough, or hard skin. Fruits are seed-bearing structures formed from the ovaries of only flowering plants. They play a crucial role in the reproduction of flowering plants, as they help in the dispersal of seeds.</p>
+        
+        <h2 id="Nutrition">Nutrition</h2>
+        <p>Fruits are a great source of fiber, vitamins, minerals, and water. They also contain antioxidants, which can help reduce the risk of heart disease, cancer, inflammation, and diabetes. Eating a diet high in fruits and vegetables can reduce a person's risk of developing heart disease, cancer, inflammation, and diabetes. Additionally, fruits are low in calories and high in essential nutrients, making them an excellent choice for maintaining a healthy diet.</p>
+        
+        <h2 id="Types">Types of Fruits</h2>
+        <p>Some examples of fruits include:</p>
+        <p><b>Citrus fruits:</b> Contain vitamin C, antioxidants, and other health-boosting compounds. Oranges, grapefruit, lemons, limes, shaddocks, and citrons are all types of citrus fruit. They are known for their tangy flavor and are often used in juices and desserts.</p>
+        <p><b>Berries:</b> A fruit produced from the ovary of a single flower with multiple seeds. Examples include strawberries, blueberries, and raspberries. Berries are often rich in antioxidants and vitamins, making them a popular choice for healthy snacks and desserts.</p>
+        <p><b>Stone fruits:</b> These fruits have a large, hard pit or "stone" inside. Examples include peaches, cherries, and plums. Stone fruits are typically juicy and sweet, making them ideal for fresh eating or baking.</p>
+        <p><b>Melons:</b> Large, juicy fruits with a high water content. Watermelon, cantaloupe, and honeydew are popular examples. Melons are refreshing and hydrating, perfect for hot summer days.</p>
+        
+        <h2 id="facts">Interesting Facts</h2>
+        <p>Fruits have been cultivated for thousands of years and have significant cultural and historical importance. For instance, apples have been associated with knowledge and temptation in various mythologies. Additionally, bananas are technically berries, while strawberries are not. The diversity of fruits around the world is vast, with each region offering unique varieties that contribute to local cuisines and traditions.</p>
+        <p>Regular consumption of fruits is linked to numerous health benefits, including improved digestion, enhanced immune function, and reduced risk of chronic diseases. Incorporating a variety of fruits into your diet can provide a wide range of nutrients and flavors, making meals more enjoyable and nutritious.</p>
+    </div>
+    <a href="#top" class="go-top">Go on Top</a>
+</body>
+</html>
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits</title>
+</head>
+<body>
+    <h1 id="top">Fruits</h1>
+    <p>Here are some facts about fruits</p>
+</br><hr>
+<h2 id="Definition">Definition</h2>
+<p>A fruit is the part of a flowering plant 
+    that contains seeds. Fruits can be fleshy or 
+    dry, and can have thin, tough, or hard skin.</br>
+    Fruits are seed-bearing structures formed from 
+    the ovaries of only flowering plants.
+     A fruit is the soft, pulpy part of a flowering 
+     plant that contains seeds. It is formed from 
+     the ovaries of angiosperms and is exclusive 
+     only to this group of plants. Fruits are 
+     classified into four types namely: Simple
+      fruits.</p>
+<hr>
+<h2 id="Nutrition">Nutrition</h2>
+<p>Fruits are a great source of fiber, vitamins,
+     minerals, and water. They also contain 
+     antioxidants, which can help reduce the risk
+      of heart disease, cancer, inflammation, and 
+      diabetes.</br> 
+      Fruits are an excellent source of essential vitamins and minerals, and they are high in fiber. Fruits also provide a wide range of health-boosting antioxidants, including flavonoids. Eating a diet high in fruits and vegetables can reduce a person's risk of developing heart disease, cancer, inflammation, and diabetes.
+    </p>
+<hr>
+<h2 id="Types">Types of fruits</h2>
+<p>Some examples of fruits include: </p>
+<p><b>Citrus fruits:</b> Contain vitamin C, antioxidants, and other health-boosting compounds. Oranges, grapefruit, lemons, limes, shaddocks, and citrons are all types of citrus fruit. Citrus fruits have a juicy pulp inside a leathery skin. They grow on trees, bushes, or shrubs. Citrus plants belong to the rue family of flowering plants.</p>
+<p><b>Berries:</b>A fruit produced from the ovary of a single flower. A berry is a fruit produced from the ovary of a single flower, where the outer layer grows into an edible fleshy portion. Surprisingly, this includes a wide range of fruits, such as bananas, avocados, grapes, and even watermelon! In addition, a berry must have two or more seeds, which is why cherries don't count.</p>
+<p><b>Stone fruits:</b>Fleshy fruits that contain only one seed, or pit, such as cherries and peaches. Fruits such as apricots, nectarines, cherries, plums, pluots, mangoes, and peaches are all examples of stone fruit. Also called drupes, stone fruits, as the name implies have a pit or “stone' in the center of its flesh. Inside the stone is the fruit's actual seed.</p>
+<p><b>Dragon fruit:</b>Also known as pitaya or pitahaya, this fruit is rich in fiber, iron, magnesium, and vitamins C and E.Dragon fruit is a tropical fruit that's low in calories and high in fiber and antioxidants. Some people say it tastes like a cross between a pear and a kiwi. You can slice and eat the fruit as-is, try it with yogurt, or add it to a smoothie or salad. </p>
+<p><b>Grapes:</b>A berry that grows on the vines of the flowering plant genus Vitis. Grapes are bulb-shaped fruits. They can be eaten fresh, dried to make raisins, or crushed to make grape juice or wine. There are more than 8,000 varieties of grape. Grapes grow in wooded and warm regions of the world.</p>
+<hr>
+<h2 id="facts">Other facts </h2>
+<p>Some foods that are commonly called vegetables are actually fruits, such as tomatoes, cucumbers, and squashes. Cranberries 
+    have air pockets inside that allow them to float,
+     which makes them easier to pick.
+</br>
+#1 - Apples, peaches and raspberries are all members of the rose family. </br>#2 - Pumpkins and avocados are fruits not a vegetable.</br> #3 - A half-cup of figs has as much calcium as a half-cup of milk.</br> #4 - Green fruits help make your bones and teeth strong.</p>
+<a href="#top" style="color: blue;">Go on Top</a>
+</body>
+</html>
+ -->

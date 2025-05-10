@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manali Travel Guide</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white; /* Text color */
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 15px; /* Padding for better click area */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Transition for background and transform */
+        }
+        .fruits {
+            background-color: #28a745; /* Green for Fruits */
+        }
+        .pandemic {
+            background-color: #dc3545; /* Red for Pandemic */
+        }
+        .booking {
+            background-color: #007BFF; /* Blue for Booking */
+        }
+        nav a:hover {
+            opacity: 0.8; /* Slightly fade on hover */
+            transform: scale(1.05); /* Slightly enlarge the link */
+        }
+        .contact-link {
+            background-color: #007BFF; /* Blue background */
+            color: white; /* White text */
+            padding: 10px 15px; /* Padding for better click area */
+            border-radius: 5px; /* Rounded corners */
+            text-decoration: none; /* Remove underline */
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+        .contact-link:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            color: #f8f9fa; /* Light text on hover */
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in;
+        }
+        h1, h2 {
+            color: #333;
+            text-align: center;
+            animation: slideIn 0.5s ease-in-out;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .image-gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+        iframe {
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        video, audio {
+            width: 100%;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        hr {
+            margin: 20px 0;
+        }
+        .scrolling-text-container {
+            width: 100%; /* Full width */
+            overflow: hidden; /* Hide overflow */
+            white-space: nowrap; /* Prevent text wrapping */
+        }
+        .scrolling-text {
+            display: inline-block; /* Make it inline-block for scrolling */
+            animation: scroll 10s linear infinite; /* Keep the scrolling animation */
+        }
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="top">Manali Travel Guide</h1>
+    </header>
+    
+    <nav>
+        <a href="./website_fruits.html" target="_blank" class="nav-link fruits">Know more about Fruits Article</a>
+        <a href="./d3_Pendamic_article.html" target="_blank" class="nav-link pandemic">Know more about Pandemic (COVID-19) Article</a>
+        <a href="./Manali_Form.html" class="nav-link booking">Book Your Manali Tour</a>
+    </nav>
+    
+    <div class="container">
+        <h2>All You Need to Know</h2>
+        <div class="scrolling-text-container">
+            <div class="scrolling-text">
+                <h2>All you need to know about Manali!</h2>
+            </div>
+        </div>
+        
+        <div class="image-gallery">
+            <img src="media/Manali1.jpg" alt="Manali View 1">
+            <img src="media/Manali2.jpg" alt="Manali View 2">
+            <img src="media/Manali3.jpg" alt="Manali View 3">
+            <img src="media/Manali4.jpg" alt="Manali View 4">
+        </div>
+        
+        <nav>
+            <a href="#History">History</a>
+            <a href="#Geography">Geography</a>
+            <a href="#Transport">Transport</a>
+            <a href="#Media">Media</a>
+        </nav>
+        
+        <h2 id="History">History</h2>
+        <p>Manali has a rich history that dates back to ancient times. It is believed to be named after the sage Manu, who is said to have created the human race after a great flood. The region has been a significant cultural and religious center for centuries, attracting pilgrims and travelers alike.</p>
+        <p>Throughout its history, Manali has been influenced by various dynasties, including the Kullu kings, who ruled the area and contributed to its development. The town has also been a crucial stop for traders traveling between India and Tibet, which has enriched its cultural tapestry.</p>
+        
+        <h2 id="Geography">Geography</h2>
+        <img src="media/Manali2.jpg" alt="Manali Geography">
+        <p>Manali is located in the northern Indian state of Himachal Pradesh, nestled in the Kullu Valley at an altitude of 2,050 meters (6,726 feet) above sea level. The region is characterized by its stunning landscapes, including snow-capped mountains, lush green valleys, and gushing rivers. The Beas River flows through the town, adding to its scenic beauty.</p>
+        
+        <h2 id="Transport">Transport</h2>
+        <iframe src="https://en.wikipedia.org/wiki/Manali,_Himachal_Pradesh" title="Manali Wikipedia" height="400"></iframe>
+        <p>Manali is well-connected by road, with regular bus services from major cities like Delhi, Chandigarh, and Shimla. The nearest airport is Kullu-Manali Airport, located about 50 kilometers away, which offers limited flights. For those traveling by train, the nearest railway station is in Joginder Nagar, approximately 100 kilometers from Manali.</p>
+        
+        <h2 id="Media">Media</h2>
+        <a href="https://www.imdb.com/title/tt2178470/" target="_blank" title="To IMDB">
+            <img src="media/Manali3.jpg" alt="Manali Media" width="400">
+        </a>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YkFsf-vaLkI?si=IUIEvUnBwv5KcJ7O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        <p>Manali has been featured in various films and documentaries, showcasing its breathtaking landscapes and vibrant culture. The town is a popular destination for filmmakers, and many movies have been shot in and around the area, highlighting its natural beauty.</p>
+        
+        <h2>Contact Us</h2>
+        <nav>
+            <a href="mailto:rohanrakh1212@gmail.com" class="contact-link">Contact us</a>
+        </nav>
+    
+        <h2>Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26997.532023013307!2d77.1871198!3d32.23947205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39048708163fd03f%3A0x8129a80ebe5076cd!2sManali%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1735123596197!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+        <h2>Media Files</h2>
+        <video src="./media/manali video.webm" controls></video>
+        <audio src="./media/manali trance.m4a" controls></audio>
+        
+        <h2>Downloadable Content</h2>
+        <iframe src="media/Manali-Travel-Guide.pdf" frameborder="1" width="450" height="600"></iframe>
+        
+        <footer>
+            <p>&copy; 2023 Manali Travel Guide. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
+
+<!--  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchor Tag</title>
+</head>
+<body>
+    <hr/>
+    <a href="./website_fruits.html" target="_blank">Know more about Fruits Article</a>
+    <a href="./web_Pendamic_article.html" target="_blank">Know more about Pendamic (covid 19) Article</a>
+    <hr/>
+    <h1 id="manali" style="text-align: center;" >Manali</h1>
+    <marquee direction ="left" scrollamount="10">
+        <H2>All you need to know </H2>
+    </marquee>
+    <marquee>
+        <img src="media/Manali1.jpg" width="250px" height="200px">
+        <img src="media/Manali2.jpg" width="250px" height="200px">
+        <img src="media/Malali3.jpg" width="250px" height="200px">
+        <img src="media/Manali4.jpg" width="250px" height="200px">
+    </marquee>
+    
+    <img src="media/Manali1.jpg" alt="" width="300px">
+    <hr />
+    <a href="#History">History</a> <a href="#Geography">Geography</a>
+    <a href="#Transport">Transport</a>
+    <a href="#Media">Media</a>
+    <hr />
+    <h2 id="History">History</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non tempora eveniet quae, dolor distinctio cumque laudantium porro ea architecto molestiae necessitatibus praesentium at qui atque ipsum id quod dolorem adipisci? Necessitatibus itaque debitis, neque sed accusantium praesentium assumenda deserunt dicta incidunt nisi cum magnam consequuntur nobis quos error consectetur expedita iusto tenetur reprehenderit alias labore odit! Unde repudiandae natus optio eaque illo quasi magni. Rerum recusandae sed officia sapiente optio tempora placeat maxime ipsa voluptate dicta fugiat distinctio dolorem voluptatibus sequi, deserunt aliquid atque. At enim accusamus voluptate delectus omnis optio sit, perspiciatis temporibus expedita corrupti maiores officia ducimus. Quo sint voluptates quae ut reiciendis. Beatae reiciendis, sit explicabo atque ipsum doloremque laudantium vero in est voluptatibus consequuntur saepe nemo delectus possimus magni reprehenderit nam enim unde dolor! Officiis quasi nihil illum eos quia nesciunt illo, deserunt quaerat vitae voluptates vel expedita inventore sit recusandae possimus consequatur! Nostrum, quam blanditiis maxime optio eaque aperiam nemo nobis repellendus odit temporibus esse, nesciunt iure corrupti facilis deleniti in laudantium est! Reiciendis numquam iusto commodi molestiae tempora? Vero dicta, excepturi consequatur laudantium illum dolor quo mollitia blanditiis molestias similique vel! Placeat tempora ab voluptates, unde amet, exercitationem, quod magnam quibusdam dolorum temporibus incidunt culpa eum? Magnam itaque dolorum enim deserunt veniam minus esse totam aperiam quidem blanditiis facere placeat non quaerat ut a laboriosam quibusdam commodi eum ipsam molestiae, sunt velit. Aspernatur eius accusamus minima, possimus sequi fuga doloribus esse aliquam, ducimus, numquam eligendi hic earum praesentium architecto libero laboriosam voluptate quo accusantium ab! Facilis natus dignissimos architecto ipsam repudiandae voluptates soluta velit autem reiciendis tempora adipisci, odio consequuntur suscipit nulla similique neque ea corrupti officia dolorum harum. Dolores reprehenderit distinctio similique illo ipsum, dolor voluptate perspiciatis nobis hic, possimus architecto eius consequatur odit ipsa rem dignissimos tenetur sit sequi dicta perferendis magni veniam a. Quae corrupti quod, blanditiis, odit at tenetur, debitis recusandae minus ea adipisci amet. Similique iure id quisquam molestiae natus quam, ab minima fugiat explicabo sapiente consectetur itaque vero perferendis modi maxime quod sit recusandae exercitationem doloremque dolores aliquam corporis reiciendis asperiores! Quae eaque dolor natus in quod debitis blanditiis quam odio fugiat repellat esse veniam repudiandae possimus non, aliquam laboriosam quisquam, neque ea? Provident necessitatibus nam blanditiis quo! Provident, at sint enim sit odit quas ipsam fugit vitae. Modi vitae iusto consequatur numquam suscipit adipisci porro beatae voluptatum facere aliquid, impedit rem alias nisi dolor similique fugit obcaecati eaque illum ut! Animi laboriosam alias totam ratione cumque consequuntur consequatur quis odio necessitatibus ab. Iusto nihil sint natus dolorum voluptatum, exercitationem obcaecati sed reprehenderit id dicta. Qui quibusdam sit fugit magni exercitationem necessitatibus repellat quaerat placeat quod dolore cupiditate totam, molestiae culpa. Excepturi reprehenderit nesciunt cupiditate amet quo quis quam doloremque voluptate soluta necessitatibus hic, in laudantium, temporibus aperiam provident, mollitia sit perferendis ab quos placeat. Quasi veritatis, iure quaerat recusandae facere necessitatibus id architecto pariatur obcaecati consequuntur aspernatur atque repudiandae mollitia praesentium veniam commodi aliquam a adipisci in accusantium nobis ullam ex vero. Maxime similique, est saepe alias, eaque fugiat fugit aliquam natus quidem, iusto ducimus pariatur. Sunt quaerat incidunt perferendis neque sapiente est pariatur ratione recusandae beatae temporibus repellat, quia dignissimos rerum! Labore iusto recusandae harum dolores amet hic maxime asperiores inventore, sed aliquam laudantium ut enim aliquid quas expedita earum dolorum facilis culpa accusamus fuga non quia corrupti reprehenderit. Rem nihil aspernatur error sit minus excepturi quas itaque mollitia eum pariatur voluptatibus, optio repellendus commodi voluptatum ut. Quo, molestiae aspernatur veniam laboriosam dolorum suscipit neque nisi eos maxime eligendi blanditiis laudantium. Fuga a nesciunt, hic omnis voluptas, officia, corporis ipsa quasi consectetur quia natus tempora delectus consequatur! Soluta asperiores, facilis, cum fuga sit maxime ad labore consequatur porro consectetur error iure, eos doloremque delectus! Cumque, fugit. Autem ab rem unde id sapiente quo magni possimus velit iste pariatur provident soluta, optio laborum vel officia voluptates eos nemo quibusdam maxime iure ipsum numquam consequatur. Quibusdam sequi blanditiis recusandae rem voluptates placeat distinctio maiores a labore vero culpa porro dicta enim numquam iure possimus, deleniti nobis dolorem dolore, ullam ab laboriosam eligendi! Quasi molestias assumenda libero earum? In perferendis excepturi laborum fuga sit vitae odit quisquam eaque modi corrupti quo, quas praesentium optio quaerat dolor eos enim officiis porro sequi error! Magni itaque ipsam ducimus natus. Enim sint quasi eligendi ad recusandae repellendus, molestias, ipsum accusantium quae sapiente perspiciatis dignissimos tempora voluptas atque exercitationem. Illo dolores nulla minima autem quaerat, fuga ipsam eligendi, voluptate quos accusamus facere praesentium. Molestias non accusamus aspernatur error animi, aliquid doloremque, commodi beatae quos corporis eligendi provident placeat laudantium nemo sed ipsum. Tenetur harum ipsum voluptates labore voluptatem incidunt qui nisi hic magnam rerum ad eius laborum, illum exercitationem aliquam aut, esse facilis fugiat iste. Dolorem facere nesciunt fugiat, ullam expedita laudantium quaerat vel. Consequuntur, earum. Aut autem eligendi dolorem ab porro, repellendus placeat aspernatur error unde, officia dolore atque recusandae aliquid illum numquam, harum nihil dolores veniam ducimus magnam inventore nulla omnis dolor? Id, odit odio eos vel, libero dolorem iusto labore doloribus, eius soluta quae! Repellendus, tempora ullam neque consectetur ad quia quisquam adipisci quo ab, cum consequatur id voluptates quasi eaque odit minus, quod officia voluptatem harum. Minima, modi voluptatum. Esse officiis error accusantium, quod similique aliquam autem harum eum. Saepe nostrum, tenetur debitis ex at adipisci doloribus incidunt corporis expedita accusamus voluptate non qui repellendus rerum pariatur magnam fugit ullam quod? Quos ipsum deleniti modi impedit et aperiam quidem. Nihil, autem quo assumenda quis minus perspiciatis ipsa, cumque in totam praesentium ullam et quibusdam eum debitis quod aspernatur repellendus magnam, aliquam nemo sunt sapiente! Quidem suscipit, facilis cumque rerum libero qui excepturi a, nobis voluptates ea fugit odio asperiores unde. Optio blanditiis dolor beatae eos nulla. Ab repellendus, ex modi rerum fuga, blanditiis mollitia eos, ea vitae possimus optio harum. Sit fugit eius cupiditate atque pariatur? Quasi pariatur sequi eaque iure quisquam, inventore perferendis quo distinctio quibusdam modi nesciunt, unde non deleniti vero omnis veritatis odit, neque a nisi! Incidunt praesentium sapiente sunt fugit distinctio dolor, veniam odio recusandae?</p>
+    <a href="#manali">Go to Home</a>
+    <hr />
+    <br />
+    <h2 id="Geography">Geography</h2>
+    <img src="media/Manali2.jpg" width="400px">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam vel nesciunt voluptatum maxime reprehenderit dignissimos nisi rem laborum optio laboriosam ea possimus veritatis aut sit, aliquid non. Nobis non recusandae animi quo velit minus voluptates sapiente asperiores ipsa nam, corrupti quaerat sint esse earum perspiciatis. Dicta vero id ullam fuga! Suscipit distinctio aperiam, unde quia voluptatum dicta accusamus ab sit quisquam odio, odit voluptas culpa aspernatur dolor ipsum, corporis commodi consequuntur placeat. Temporibus nam veniam enim pariatur voluptates laudantium omnis ipsam repudiandae accusamus nisi! Perferendis, dolor, labore reiciendis exercitationem voluptatum earum quisquam facilis, commodi error rerum quibusdam nam! In dignissimos tenetur culpa voluptate sunt error amet unde officia, cupiditate odit blanditiis, saepe nihil, consequatur maxime eius veritatis. Iste ipsum consectetur dolorem debitis harum vero, omnis, aliquam et nobis voluptatem explicabo quo facere adipisci, libero voluptatum error quasi placeat fugiat eius! Repellendus aliquid dolorem iste tenetur odit, a voluptatibus labore officiis! Odio, vero doloribus. Nulla ea magnam placeat labore deserunt voluptate ex obcaecati sed nihil ratione veritatis, nostrum eveniet blanditiis molestias cum aut unde ab aliquam assumenda itaque ipsum id debitis suscipit dolorem? Corrupti explicabo ex possimus impedit aliquam! Consequatur iste quia nemo molestias saepe dolor doloremque voluptatibus obcaecati sequi, numquam, tenetur commodi perspiciatis maxime quam iusto ut dolorem eveniet aliquam sed? Fuga, provident totam hic itaque sunt sint tempore labore quisquam beatae quam deserunt, quia illum. Consectetur illo expedita et, cumque officia, nisi at ullam alias exercitationem harum ex quod voluptates eaque aspernatur facere qui! Nobis commodi ipsum esse ipsam illo optio consequatur. Beatae soluta molestiae adipisci odit eum nesciunt vel veritatis. Tempora eos reprehenderit dignissimos ratione! Veniam ullam repudiandae aspernatur impedit expedita ab, sapiente laborum quod voluptates nesciunt libero! Dolore optio eum voluptatibus dolores recusandae id quaerat impedit, mollitia autem nulla, fugit delectus ab illum repellat ut tenetur ex debitis quidem velit obcaecati consequatur sunt. Sint, eos dicta maxime cupiditate recusandae at eligendi dignissimos sunt adipisci similique et suscipit dolorum? Soluta ab pariatur quas itaque qui voluptatum deleniti perspiciatis vitae ipsum adipisci, sequi obcaecati assumenda? Exercitationem ullam magnam dignissimos quidem excepturi explicabo consectetur minima sint? Odio minima dicta unde quo qui illo expedita fuga velit at quis? Atque at, sunt iusto nisi rerum ea, praesentium eum illo odit veritatis nostrum dicta delectus. Tenetur voluptatibus dolorum id in sint tempore laboriosam beatae ab! Nulla, iusto provident at expedita dolores quia voluptatem. Nostrum rem ab ratione magni itaque iusto numquam amet nihil at beatae libero reiciendis, corrupti aliquid quos veniam repudiandae voluptatem accusamus dolores maiores quis pariatur assumenda. Ullam beatae autem debitis dolorem molestiae. Asperiores minus, dignissimos dolorum ratione tempore quidem vel corrupti ullam quos fugit quis voluptas, quod vitae numquam ut saepe ad tenetur possimus corporis quaerat eum repudiandae. Officiis in odio laudantium fugiat assumenda, atque quidem error beatae fugit molestiae voluptate, illo, eos ab nihil maiores dolorum harum pariatur repellat non a! Obcaecati ut doloremque blanditiis unde accusantium nulla autem. Deleniti, ipsa. Placeat hic consequuntur, libero nesciunt vitae ab, quod nostrum dolore corporis perspiciatis officiis, inventore est? Enim voluptate suscipit, laboriosam quam nulla quidem odit cumque ipsam velit dolor quia incidunt mollitia. Tempora sint aperiam accusamus alias nemo in incidunt architecto sit libero laboriosam ipsa, exercitationem maiores hic optio facere dolorum! Quibusdam neque debitis culpa dicta, corrupti accusamus, laborum dolor, voluptatem nesciunt dolores optio maxime quasi minima at voluptatum dignissimos dolorum. Magni ullam blanditiis quaerat minus, cum vel eius ratione ea iste, velit tenetur beatae? Molestias consequatur assumenda mollitia omnis nulla quod, eum illo. Doloribus quaerat impedit at eum, quam totam saepe illo odio? Cumque, voluptatem laboriosam. Numquam veritatis saepe dolor, nemo hic autem minima velit, modi laborum iure, tempora nostrum quas consequatur molestias incidunt cupiditate. Quasi, ut officia repellat nemo animi voluptates fugiat voluptatem reprehenderit deleniti neque explicabo adipisci inventore et sit sapiente debitis quam, similique, repellendus quaerat reiciendis? Ipsum assumenda odit deleniti expedita voluptatem, eos totam esse tempore quae velit aperiam in unde, magnam numquam. Et labore, ad maxime vel sequi perferendis aspernatur molestias ut ipsa voluptas cupiditate repellat expedita dicta, illo earum soluta placeat voluptatem, minima corporis deleniti eveniet nemo magni eligendi? Maiores dolorem voluptates magni vero, maxime optio aut commodi inventore harum ducimus quae facere asperiores dicta. Ipsam tenetur libero voluptate possimus delectus? Totam molestias libero consequuntur repellat? Quasi a odit et qui rerum maxime suscipit quia perspiciatis in necessitatibus inventore impedit sit, animi eligendi. Fugit veritatis repellendus ea vel sapiente similique eum perspiciatis rerum provident rem quisquam recusandae, ducimus, ullam ex cumque labore? Qui magni quas debitis possimus aspernatur, eum quia modi. Itaque, eaque in fugiat nemo eligendi vel aspernatur velit voluptate praesentium maxime. Ratione saepe error dolores? Atque officiis saepe optio, quidem in soluta. Natus veritatis atque ipsum magnam aut architecto minima magni voluptate adipisci voluptas. Ea, officia consequatur! Adipisci, reprehenderit. Aspernatur veritatis quod eius vero doloribus reiciendis quasi, soluta voluptates officiis sed accusamus rem commodi id molestiae repellat hic tenetur perspiciatis? Aperiam error assumenda exercitationem neque earum iusto dolores harum, illo enim, temporibus ab necessitatibus? Eius ea veritatis quis odio pariatur error. Natus, maiores dicta. Iusto cupiditate dicta, officia optio ipsum in quibusdam tempora enim ea suscipit quam quis repellendus, molestiae dolores veritatis temporibus vel illo nobis aliquid voluptatem totam harum! Reprehenderit consequuntur eaque nulla quam tenetur ad veritatis obcaecati odio soluta! Ipsa harum nulla omnis eligendi eaque quae blanditiis mollitia beatae voluptates dicta! Excepturi inventore ad dicta assumenda sed? Dolorem tenetur debitis dignissimos veniam in soluta mollitia similique enim sint sequi eaque quasi eum error facilis, doloremque tempora velit ex deserunt corporis at sed, incidunt corrupti! Reiciendis voluptatibus repellendus possimus delectus, iure sapiente mollitia ducimus voluptates fugit aliquid facere praesentium debitis dolor provident neque non itaque quos! Ea porro officia ipsa, doloribus iusto accusantium praesentium tempora similique beatae molestiae nostrum saepe, repellat ex impedit dolore quaerat nihil. Quis libero blanditiis, labore ea molestiae maxime veritatis illo! Reiciendis veritatis in maxime doloribus tenetur quaerat ducimus rem quos aliquam, soluta eum sint voluptates placeat vel exercitationem repudiandae aut pariatur, cupiditate vero dicta laborum fugit possimus. Omnis debitis perferendis eum, ea commodi quod labore.</p>
+    <a href="#manali">Go to Home</a>
+    <hr />
+    <br />
+    <h2 id="Transport">Transport</h2>
+    <iframe src="https://en.wikipedia.org/wiki/Manali,_Himachal_Pradesh"
+    frameborder="2"
+    width="500"
+    height="400">
+    ></iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eius magni veniam molestias qui possimus dignissimos illum sunt delectus, nostrum similique quae quisquam rem incidunt. Facere quia porro fugit illo vel aliquam, iusto atque sapiente omnis dolorem voluptatum debitis nemo dolore accusantium delectus ea soluta suscipit sunt deserunt totam iure quas inventore. Autem maiores tempora voluptatibus consequatur? Ut dolores ea quisquam iste ratione voluptatum, quos molestiae architecto reprehenderit suscipit fugit, eligendi adipisci eius velit consectetur quaerat soluta modi labore nemo esse. Tenetur qui, laboriosam illo eveniet recusandae esse cum unde perspiciatis pariatur alias accusantium quasi vel laudantium, ipsa aspernatur! Consequuntur doloribus reprehenderit obcaecati! Voluptatum, fugiat pariatur sit libero quae dolorum est perferendis corrupti veritatis nemo tempora! Debitis, esse sed reiciendis laudantium doloremque accusamus aliquid tenetur soluta, temporibus fugiat fuga autem, at eligendi tempora iusto veritatis. Delectus, cumque quia ratione velit debitis tenetur illum in aut labore placeat accusantium distinctio, amet voluptate laudantium, aperiam reiciendis quasi. Soluta cum, eos iusto, officia mollitia repellendus amet quisquam quae facere modi possimus quod ullam harum, eligendi optio nobis sapiente neque molestias! Consequatur accusantium nemo modi at quia architecto aspernatur illum, reprehenderit dolores dolor tenetur officia, quo quae qui dolore quasi voluptatem nostrum eos fuga necessitatibus quibusdam sequi? Quidem quae perspiciatis aspernatur magnam hic dignissimos minima, quam facere porro eos. Dignissimos hic aut deserunt exercitationem reiciendis fugit totam eaque, esse vel, eveniet fugiat officiis molestias deleniti nesciunt praesentium. Sint, ex qui! Doloremque, repellat quaerat nemo cum molestiae inventore quia a dolores nam eaque explicabo culpa nostrum vel odio optio, quos atque in saepe similique accusamus deserunt unde! Ipsam voluptas quas, non eligendi molestias delectus error tempore autem! Minima quidem excepturi illum fugiat, itaque laboriosam asperiores sint tempora nisi incidunt earum atque at pariatur vitae ex quis eveniet enim recusandae! Vel ducimus suscipit aliquam praesentium excepturi autem labore nulla, eius harum quasi sint quibusdam a perspiciatis reprehenderit ut quia asperiores est magni voluptas blanditiis rerum cumque voluptate temporibus. Fugiat, nulla? Deserunt doloribus ex repellat ipsam quidem soluta veritatis harum impedit quibusdam, magnam molestiae ducimus sint praesentium consequatur eum rerum eos quasi, eveniet odio sequi quod necessitatibus! Non sint, qui rem rerum deleniti laudantium laboriosam deserunt ut dolores ullam assumenda cupiditate sunt fugit, asperiores incidunt delectus dolor debitis amet soluta explicabo in eligendi enim eveniet! Accusamus ad quo quos sed! Repellat fuga nemo quisquam hic minima, veniam aspernatur qui, architecto sit unde adipisci ad cum! Corrupti molestiae quidem, quae labore, asperiores voluptas commodi error odio earum ratione recusandae quod tempore laborum aut porro veniam eos culpa facilis non! Ullam, est labore! Recusandae ipsum et, quos nostrum impedit veniam sed eum eligendi commodi culpa architecto sint possimus vero ab minima, enim, asperiores odit amet saepe ipsa. Atque excepturi inventore voluptas vitae! Dicta alias impedit corrupti omnis minus atque, sunt magni quasi est blanditiis suscipit nemo iusto obcaecati iure distinctio earum quidem dolores vitae? Laudantium provident eum animi! Omnis beatae qui aspernatur aut dolorem, consequatur ex rerum eveniet suscipit, necessitatibus cupiditate, id quaerat cum accusamus deleniti debitis assumenda consectetur? Possimus cupiditate itaque, blanditiis rerum delectus libero veritatis optio cum sequi fugiat harum, amet necessitatibus quas dicta fuga alias voluptatibus veniam? Modi, pariatur ipsa soluta tempore enim blanditiis quasi repudiandae sint quo. Unde, architecto voluptatibus mollitia, dignissimos sit pariatur hic amet quaerat eum, tenetur eaque? Sit, quis eius hic consectetur rem impedit quos voluptatibus tempora sint ea deserunt inventore non laborum fuga fugiat rerum assumenda at sunt explicabo iste optio. Minus nulla qui omnis, modi impedit commodi, autem repudiandae ipsam obcaecati at illum similique fuga illo nam vitae eaque dolorum consequatur, quod recusandae! Libero, sint? Debitis, porro architecto nam voluptates ad labore. Vero, corrupti dolores corporis aspernatur, quaerat voluptatum eligendi distinctio autem nam reprehenderit et voluptas dignissimos, unde dolorem exercitationem? Soluta eos voluptatum nam nesciunt quos natus et voluptates eaque explicabo assumenda unde deleniti doloremque fugit dolore animi, cupiditate vel maxime facilis enim atque cumque mollitia dolorum iusto? Veniam, iure, explicabo corrupti tenetur magni fugiat minus laboriosam, quae sequi ipsum dolorum animi earum asperiores blanditiis ipsam deserunt assumenda molestiae consectetur labore et totam illum neque natus. Esse pariatur cupiditate sed sit quo modi optio similique? Excepturi natus eligendi perferendis, maxime possimus fugiat id omnis tenetur voluptatum, doloremque voluptatem aliquid nisi similique commodi distinctio laborum sit optio labore sapiente accusamus corporis assumenda impedit. Voluptas mollitia maiores exercitationem sint aperiam hic vel dignissimos? Impedit iste dignissimos excepturi et, labore culpa iure inventore repudiandae ex reprehenderit expedita animi reiciendis nobis perferendis rem repellat? Provident, sequi laudantium numquam odio nulla esse adipisci pariatur corporis rem accusantium suscipit praesentium voluptate, laborum incidunt. Quia praesentium, aut impedit, iusto numquam ipsum, dolorem ipsa temporibus facere veniam tempora et! Dolorum cupiditate consectetur expedita eius deleniti iste, dolorem voluptatum eaque adipisci voluptates numquam! Doloribus, libero inventore deserunt atque voluptas, vitae, minima modi autem voluptates odio eaque quo voluptatibus impedit officia nostrum consectetur eos. Tempore modi iste laudantium perspiciatis ipsa impedit quis quo fugit perferendis voluptas non adipisci quas esse nihil a libero dolore, laborum labore ducimus deleniti amet alias tenetur! Perspiciatis ipsum iste cum possimus eum in, sint itaque voluptatem nam deserunt consequatur, velit voluptates accusamus obcaecati inventore sed dolor nostrum impedit, optio porro quaerat aspernatur. Distinctio libero vel a ad quos aperiam magnam, blanditiis, aliquam autem quaerat nesciunt, veritatis odit amet laboriosam itaque nisi optio qui sunt. Corrupti, nihil! Consectetur officia culpa esse, ratione, debitis dolor aliquid adipisci accusamus doloremque nemo placeat a nisi voluptatem. Eos temporibus ex voluptatem voluptate minima non? Reprehenderit perferendis voluptatem id perspiciatis, eligendi tempora, nisi ea veritatis sit similique temporibus! Nostrum nulla reiciendis aspernatur, sapiente adipisci asperiores! Nemo explicabo sed at aut eos odio nam non, facilis dolor fuga? Libero, eos soluta officiis ut nobis a, nemo neque, quis cum aut at voluptatibus dolorem repellendus doloribus tempora laborum non veritatis? Qui quo maxime dolorem minus illum aperiam nisi quasi amet obcaecati doloremque? Beatae, necessitatibus accusantium veniam incidunt quas ipsam ducimus! Vel quasi consectetur eius velit, distinctio harum qui minus blanditiis quas, voluptates praesentium saepe. Voluptates suscipit temporibus tempore voluptatibus quidem enim magnam inventore.</p>
+    <a href="#manali">Go to Home</a>
+    <hr />
+    <br />
+    <h2 id="Media">Media</h2>
+    <a href="https://www.imdb.com/title/tt2178470/" target="_blank" title="To to IMDB">
+    <img src="media/Malali3.jpg" width="400px">
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YkFsf-vaLkI?si=IUIEvUnBwv5KcJ7O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id odit dolor, repudiandae, obcaecati quidem fugiat sequi quas, soluta delectus quisquam placeat quibusdam? Ad perferendis quaerat dolorum mollitia. Saepe sapiente nulla consequatur in quas nam asperiores officia nemo, cum qui porro quo dolore ipsam veniam sequi iste nobis reprehenderit illum fuga fugit itaque possimus ab non corporis? Eligendi eveniet assumenda saepe amet obcaecati voluptas, aliquid ex maxime nobis accusantium beatae harum error repellendus fugiat sequi vel libero nulla debitis. Facere, labore ipsa dicta officiis numquam deleniti amet, hic doloremque inventore dolorem quo mollitia possimus ab blanditiis recusandae perspiciatis voluptatum laborum aliquid aspernatur, expedita rerum. Enim nemo nostrum earum vel temporibus. Adipisci, corrupti nemo. Velit dolore esse in ipsa aliquam sequi, obcaecati magnam explicabo fugiat nulla, vel debitis pariatur aperiam facilis dignissimos sint neque! Sapiente est officiis nihil ipsam, voluptatibus commodi! Nam odit deleniti aliquid sapiente enim dolor tempora nihil esse ratione, fugit atque optio aut molestias expedita temporibus distinctio voluptatum soluta at delectus. Vero quo laboriosam eligendi, distinctio assumenda possimus rem! Ipsa deserunt earum itaque adipisci fuga, beatae recusandae. Deserunt nesciunt temporibus debitis perferendis aperiam aspernatur totam cum impedit dolorum optio consectetur maxime doloremque, voluptatum quaerat nisi reprehenderit, excepturi iure modi facilis deleniti! Ipsum nihil veniam fugiat saepe illum eligendi, praesentium eos cumque perspiciatis, numquam, est explicabo a? Incidunt impedit, culpa repudiandae tempora iusto placeat quidem dicta, illum tempore adipisci, temporibus voluptas possimus! Obcaecati praesentium eaque architecto tempore maiores mollitia! Numquam dolore magnam repellendus reiciendis. Saepe iste dignissimos illum neque voluptates, incidunt omnis eos in reprehenderit ex iure, illo fuga molestias sapiente, consectetur laudantium expedita tempore. Suscipit, debitis. At placeat sapiente quaerat fugiat incidunt? Fugit voluptate tempore amet consectetur mollitia voluptates quod debitis deserunt quibusdam itaque omnis magni repellat tempora repellendus officia totam consequatur non ratione aliquam similique architecto iure, facere doloribus! Ab at minima similique dolor consectetur quam sequi debitis doloremque reiciendis. Vel iure sequi delectus veniam, a vero omnis obcaecati autem ea, molestias totam voluptates ex laudantium quod. Impedit nam dolore soluta sint laboriosam temporibus mollitia eum? Omnis repudiandae perferendis quasi minus quod. Commodi necessitatibus error voluptatum voluptatem labore explicabo facilis, quis consequatur quisquam quae doloribus accusamus accusantium! Sed amet quis nesciunt optio voluptatum dignissimos qui consequuntur aspernatur possimus asperiores soluta iure laboriosam rerum, impedit aliquid eos ullam laborum expedita nostrum maiores maxime natus? Aspernatur, deleniti doloribus? Iste nesciunt neque recusandae provident corrupti molestias similique repellat delectus aliquam nulla, quis dolore aut vitae commodi cumque. Laudantium ratione, numquam aspernatur nulla aut iste? Dicta beatae cupiditate, excepturi numquam doloremque sequi provident distinctio optio eligendi sint! Magnam at recusandae non praesentium nihil necessitatibus deleniti itaque nesciunt, obcaecati architecto id dolore et, quidem enim provident rem vitae, ratione reiciendis? Quae ullam sunt deleniti minus. Aliquam voluptatem aspernatur sequi ipsum sed facilis laborum soluta officia esse nam ipsa animi enim dolores tempora dignissimos, exercitationem hic eos similique earum! Quo molestiae asperiores quos deserunt ab, pariatur rerum ipsum suscipit maiores sapiente nisi atque amet qui fugiat magni, a quidem, quibusdam sint facilis adipisci unde!</p>
+   <br/>
+   
+    <a href="#manali">Go to Home</a> 
+--> 
+    <!--Go to somewhere on our same web-->
+ <!-- <br/>
+ --> 
+    <!-- Open different web on different tab -->
+<!-- 
+    <hr/>
+ -->
+<!-- 
+    <marquee direction="right" scrollamount="10">
+    <a href="https://en.wikipedia.org/wiki/Manali,_Himachal_Pradesh" target="_blank">Know more about Manali </a> 
+    </marquee><hr/>
+    <marquee direction="left" scrollamount="10">
+ -->
+    <!-- To open our different page of our web -->
+<!-- 
+    <a href="./web_Pendamic_article.html" target="_blank">Read about Pendamic (Covid 19 ) </a>
+    </marquee>
+    <hr/>
+    <marquee direction="right" scrollamount="10">
+ -->
+     <!-- you can send mail  -->
+<!-- 
+      <a href="mailto:rohanrakh1212@gmail.com">Contact us </a>
+      <br/>
+    </marquee>
+      <hr/>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7563.7623549178825!2d73.8150564!3d18.57939495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b8cecb206ac1%3A0x1f636eef55f8ac8b!2sNew%20Sangavi%2C%20Pimpri-Chinchwad%2C%20Maharashtra%20411027!5e0!3m2!1sen!2sin!4v1734943172565!5m2!1sen!2sin" width="400" height="300" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ -->
+      <!-- Embeded media  -->
+<!-- 
+   <video src="media/2278095-hd_1920_1080_30fps.mp4" width="500px" controls></video> ></video>
+   <audio src="media/manali trance.m4a" controls></audio>
+   <iframe src="media/Manali-Travel-Guide.pdf"
+   frameborder="1"
+   width="450px"
+   height="600px" ></iframe>
+</body>
+</html>
+   -->
+ 
