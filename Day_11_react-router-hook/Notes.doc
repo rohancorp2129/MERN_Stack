@@ -1,0 +1,92 @@
+
+React Router : 
+
+use cases :
+    helps to navigate or redirect to multiple components or pages without reloading of our web page.
+    Handles common operations such as handling url , params , redirecting and loading the data
+    
+    SPA : Single Page Application 
+
+package : 
+    Provide declarative library for react application
+
+react-router-dom :
+    latest version : 7.2.0 
+    old version : 6
+
+BrowserRouter : this is a module/package/builtin fun which is used to connect with browser URL 
+
+Routes (old verison Match ): Ma: boundary / container , to store multiple routes 
+
+# Hook : 
+
+Hook : its like a function 
+    Used in Functioonal component 
+    Its a like a function to perform multople operations , validations, manipulation and more 
+    Holds like a statefull logic like state object in class component 
+    Provide built in funciotionality 
+    React hook must be called in react Functioonal component or a custom react hook funciton 
+    prefix ->  use
+
+# 3 step work 
+        1. Import Hook
+        2. Must call hook as a function 
+        3. Used
+
+# React Router DOM hooks : 
+
+# 1) useNavigate - To Navigate or redirect to multiple component this is latest version 
+    previous name was : useHistory 
+
+    Used to :  to see History , 
+import {useNavigate} from 'react-router-dom';
+const nav=useNavigate()
+Use it : lite nav(-1) it go to last history 
+
+Old version : useHistory() : 
+
+import {useHistory} from 'react-router-dom';
+const history=useHistory()
+
+history.back()
+history.forword()
+history.push('./about');
+
+    creates new object and use whenever we want and retunr history and location object 
+
+# 2) useLocation() Hook : 
+
+    return JS location Object 
+
+    location.pathName;
+    location.key;
+    location.hash;
+    location.replace()
+
+Syntax: 
+const loc=useLocation()
+
+    ex., 
+        used to conditional rendering 
+
+        if(loc.pathName=== '/'){
+            loc.replace.pathName="/about"
+        }
+# useParams : 
+    To Access url data in a object formate 
+    Returns an object of key: value pair of the dynamic params,
+        from the current URL that were metched by the route path 
+
+    Used to access match params of current <Route path="/>
+    Child router inherits all params from their parent router 
+
+
+
+
+
+
+
+
+
+
+
