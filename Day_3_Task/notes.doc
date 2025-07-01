@@ -1,0 +1,149 @@
+React Basics Notes
+✅ HTML in React (JSX)
+        All tags must be properly closed (e.g., <br />, <img />).
+
+        Use className instead of class for assigning classes.
+
+        id attribute works the same as HTML.
+
+✅ CSS in React
+    👉 Inline CSS:
+    
+            <h1 style={{ color: 'blue' }}>Welcome to JS</h1>
+            Use style={{ key: 'value' }} format (camelCase keys).
+
+            👉 External CSS:
+            Create a CSS file (e.g., App.css).
+
+            Import it into your component:
+
+            import './App.css';
+
+✅ JavaScript in JSX
+            Use {} for JavaScript expressions inside JSX:
+
+            
+            <h2>{'Hello ' + name}</h2>
+✅ Public Folder in React
+            Public folder is used to store static data (e.g., images, icons).
+
+            Access files like:
+            <img src="logo.png" alt="logo" />
+            Note: Files must be inside /public.
+
+✅ Bootstrap Integration in React
+            👉 Using CDN:
+            Add Bootstrap CDN in public/index.html <head> section.
+
+            👉 Using npm:
+            
+                npm install bootstrap
+                
+            Then import it in your main JS file:
+
+            
+            import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
+
+1. Core JSX Concepts
+        Key Differences from HTML
+        HTML	                JSX
+        <div class="">	        <div className="">
+        <input readonly>	<input readOnly>
+        <label for="">	        <label htmlFor="">
+        
+Fragment Syntax:
+
+        <>       {/* Short syntax */}
+        <ComponentA />
+        <ComponentB />
+        </>
+
+        <React.Fragment>        {/* Full syntax */}
+                <ComponentA />
+                <ComponentB />
+        </React.Fragment>
+
+2. Styling Methods
+        CSS-in-JS Libraries Comparison: 
+
+        Library	        Bundle Size	        Syntax
+
+        Styled Components	16kB	        const Button = styled.button``color: red;``
+        Emotion	                12kB	        css prop
+        Tailwind        	3kB	        Utility classes
+        
+CSS Modules Example:
+
+        // Button.module.css  
+        .error { background: red; }  
+
+        // Button.js  
+        import styles from './Button.module.css';  
+        <button className={styles.error}>Delete</button>  
+       
+3. Project Structure
+        Scalable Folder Architecture :
+
+        src/
+        ├── components/      # Reusable UI  
+        │   ├── Button/  
+        │   │   ├── Button.jsx  
+        │   │   └── Button.test.js  
+        ├── hooks/           # Custom hooks  
+        ├── contexts/        # Global state  
+        └── utils/           # Helper functions
+        
+4. Bootstrap Integration
+        Theme Customization
+       
+                 Override variables:
+                // styles/custom.scss  
+                $primary: #ff6b6b;  
+                @import "~bootstrap/scss/bootstrap";  
+ Build with Sass:
+         npm install sass
+
+5. Advanced Patterns
+        Compound Components :
+        
+        <Tabs>  
+        <TabList>  
+        <Tab>Profile</Tab>  
+        <Tab>Settings</Tab>  
+        </TabList>  
+        <TabPanel>Content 1</TabPanel>  
+        <TabPanel>Content 2</TabPanel>  
+        </Tabs>  
+
+Render Props
+        
+        <DataFetcher  
+        render={(data) => <List items={data} />}  
+        />  
+
+State Machines (XState)
+       
+        import { useMachine } from '@xstate/react';  
+        const [state, send] = useMachine(toggleMachine);  
+        <button onClick={() => send('TOGGLE')}>  
+        {state.matches('active') ? 'ON' : 'OFF'}  
+        </button>  
+
+6. Performance Optimization
+        Memoization Techniques:
+
+        Technique	        Code	                                                Use Case
+        React.memo	        export default React.memo(Component)	                Prevent re-renders
+        useMemo	const           data = useMemo(() => heavyCalc(), [deps])	        Expensive calculations
+        useCallback	        const fn = useCallback(() => {}, [deps])	        Stable function references
+
+Lazy Loading:
+
+        const LazyComponent = React.lazy(() => import('./HeavyComponent'));  
+        <Suspense fallback={<Spinner />}>  
+        <LazyComponent />  
+        </Suspense>  
+

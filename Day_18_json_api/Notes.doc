@@ -1,0 +1,93 @@
+
+json (js object notation ) :store and transfer data betn 
+        its like obj
+        easy to nderstand 
+        its is like text which is readable 
+        large amount of data store in key : value pair 
+
+        must : key in double coated 
+
+# const obj=[
+    {
+        "key":value 
+        "id":1,
+        "name":"Rohan"
+        "is_elegible":true
+    }
+]
+
+#Why Use JSON ?
+The JSON format is syntactically similar to the code for creating JavaScript objects.
+Because of this, a JavaScript program can easily convert JSON data into JavaScript objects.
+Since the format is text only, JSON data can easily be sent between computers, and used by any programming language.
+
+
+method : 
+
+JSON.stringify() : 
+    used to convert js plain obj into json format 
+JSON.parse(): 
+    convert json string into a normal js array obj values 
+
+****************************************************
+
+
+protocols : set of rule that computers follow to communication with each other 
+
+HTTP : For web communication , use to load web pages . 
+FTP : for file transfer
+TCP/IP : for general internet communication
+
+
+methods of http : 
+
+CURD : Create Read Update Delete 
+
+    GET : received (to ftech data)
+    POST : send data
+    DELETE  : delete data
+    PUT /PATCH : Update KARNE KE LIYE 
+
+put : entrire data updation 
+patch : only selected updatedata
+    get: to fetch data ,
+    post: send data to db/server,
+    put: update entire data,  
+    patch: only selected update data, 
+    delete: delete records
+
+API : Application Programming Interface 
+bridge between server and client 
+
+An API or Application Programming Interface is a facilitator that enables apps, databases, softwares and IoT devices to communicate with each other, without which they won't be able to interact.
+It's a set of tools and protocols used by developers to build user-friendly software apps.
+
+A Web API is an application programming interface for the Web.
+A Browser API can extend the functionality of a web browser.
+A Server API can extend the functionality of a web server.
+
+
+#API protocol types
+
+To use APIs, we must adhere to specific procedures. A protocol specifies the rules for API calls. 
+An API call is a message sent to a server requesting an API to provide information or a service. 
+Let's look at some of the most used API protocols:
+    REST API
+    RPC
+    GraphoQL
+    SOAP
+
+create API : 
+
+create folder inside app 
+
+install server : npm i -g json-server@0 
+
+to start server and create db dbile : npx json-server --watch db.json
+
+write json file : 
+
+Test API : postman App 
+
+
+

@@ -1,0 +1,120 @@
+
+State : 
+constructor method in react . 
+        use to define state .
+
+different bet : Constructo in JAVA and React js 
+
+
+In Java, a constructor is a special method that is automatically called when an object of a class is created. It has the same name as the class and does not have a return type.
+ Constructors are used to initialize the object's state, setting up necessary values or resources. 
+Key features of Java constructors:
+Initialization: Constructors initialize the object's instance variables with default or specified values.
+No return type: Constructors do not have a return type, not even void.
+Same name as class: Constructors must have the same name as the class they belong to.
+Types of Constructors:
+Default Constructor: A no-argument constructor provided by the compiler if no constructor is defined.
+Parameterized Constructor: A constructor that accepts arguments to initialize object properties.
+Copy Constructor: Creates a new object by copying an existing object's values. 
+Private Constructor: Restricts object creation from outside the class.
+
+
+React JS
+In React, a constructor is a special method used in class components to initialize the component's state and bind event handler methods. It is called before the component is mounted.
+
+Key aspects of React constructors:
+State Initialization:
+Constructors are used to set the initial state of a component using this.state.
+
+Binding Event Handlers:
+Constructors are often used to bind event handler methods to the component instance using this.methodName = this.methodName.bind(this).
+
+Calling super(props):
+It's essential to call super(props) at the beginning of the constructor to initialize the parent class's constructor and enable access to this.props.
+
+Not Always Necessary:
+If you don't need to initialize state or bind methods, you don't need to implement a constructor. 
+
+Functional Components:
+Constructors are not used in functional components, where state is managed using hooks like useState.
+
+Similarities:
+Both in Java and React, constructors are used to initialize objects or components.
+
+Both are automatically called when an object or component is created.
+
+Both are special methods/functions with specific purposes.
+
+Differences:
+Java constructors are used for object creation, while React constructors are used for component initialization.
+
+Java constructors can be overloaded, while React class components can only have one constructor.
+
+React constructors have specific requirements like super(props) and are not needed when using functional components.
+
+
+
+
+Event handling : in class and functional component 
+
+Events :catch user actions and do something on it .
+             action performing on sys. 
+
+this.Demo - need to bind if not using () so use this.Demo.bind(this)
+()=>{this.Demo()}
+
+this.demo - just call referenece , but if need para then use arrow fun . 
+
+you can call inline also - onclick={alert("   text ")}
+
+you can just pass fun_name : onclick={demo4} but we need to define it inside render const demo4(){  code }
+
+this.setState : to update state 
+
+on cutton pass method 
+onclick={this.updateState()}
+
+and inside constructor we can udpate state
+
+this.setState({
+    name: 'new value '
+
+})
+
+using funtioan form 
+
+this.setState({(...prev)=>{
+    count: prev.count+1
+}
+
+})
+count : prev.count+1
+without :  count : this.state.count+1
+
+virtual DOM : first copy of your real DOM and then when render on browser , if agaiun you are re-rendering then it create again copy of Virtual DOM and it compare actual Virtual DOM and copy VD and chanege it . create copies of DOMs , and compare through algo . for ren 
+
+
+
+props :(properties) data passing from one to second component . from parent to child 
+        can access child 
+        immutable : cant change
+add in parent ex index.js : name inside <App name : "Rohan"  />
+
+and inside child - constructor(props) and super(props)
+
+
+state and props in react js ?
+mutable 
+manage component data
+
+access data
+
+child access 
+
+update state 
+
+
+
+for each method
+rendering 
+

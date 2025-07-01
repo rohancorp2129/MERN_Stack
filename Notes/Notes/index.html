@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CDN Link -->
+
+
+    <!-- 2 Types of File
+    
+    Compressed File / Minified File / Production FIle- used while Deployment / Production
+    File size is small
+    Not Readable
+
+
+    Normal file / Unminified / Uncomrepsess file - Used while Development 
+    FIle size is large
+    Redable
+    
+    -->
+
+    <!-- React 18 CDN Link  - UI-->
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script> -->
+
+    <!-- React DOM 18 CDN Link - DOM Manipulation-->
+    <!-- <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+
+
+    <!-- Prodcution File -->
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script> -->
+    <!-- <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script> -->
+
+
+    <!-- Import Locally  -->
+    <script src="../react.development.js"></script>
+     <script src="../react-dom.development.js"></script>
+
+</head>
+
+<body>
+
+    <h1 id="root"> </h1>
+
+
+
+    <script>
+
+        // React Data rendering
+
+        // createRoot- Used to display our component data on a browser DOM Node Tree
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render("Welcome To Our First React APP")
+
+
+    
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Json Method : </h1>
+    <hr>
+    <script>
+        const obj={
+
+            id:1,
+            name:"Rohan",
+            skill:"React",
+            phone:1234567890
+        }
+        console.log(obj)
+        console.log(JSON.stringify(obj))
+
+        // ********************
+
+        const arr =[10, 20, 30, 40 ,50]
+        console.log(arr)
+        console.log(JSON.stringify(arr))
+
+
+        // *******************************************************************
+
+        // JSON.parse()
+        //  convert json string into a normal js array obj values 
+        const jsonobj='{"empid:1 ,"empemail : "email@gmail.com  ","empName":"ABC"}'
+        console.log(jsonobj)
+
+        console.log(JSON.parse(jsonobj))
+
+        
+ 
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        #headtext {
+            font-size: 50px;
+            font-weight: bold;
+            color: #ac8a12;
+            /* text-align: center;
+            margin-bottom: 20px; */
+            
+
+        }
+
+        .op_btn {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .btns {
+            font-size: 18px;
+            color: #fff;
+            font-weight: bold;
+            height: 40px;
+            width: 120px;
+            border: none;
+            border-radius: 5px;
+            background-color: #00698f;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btns:hover {
+            background-color: #004c6d;
+        }
+
+        .inputs {
+            margin-bottom: 20px;
+            margin-left: 50px;
+            padding: 20px;
+            display: flex;
+            justify-content: start;
+        }
+
+        .inputs label {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        .inputs input[type="number"] {
+            width: 200px;
+            height: 40px;
+            font-size: 18px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .op_ans {
+            margin-top: 20px;
+            margin-left: 50px;
+            padding: 20px;
+            display: flex;
+            justify-content: start;
+        }
+
+        .op_ans label {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        .op_ans input[type="text"] {
+            width: 200px;
+            height: 40px;
+            font-size: 18px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <marquee><h1 id="headtext">Basic Calculator</h1></marquee>
+    <div class="op_btn">
+        <button id="Add" class="btns" onclick="add()">Addition</button>
+        <button id="sub" class="btns" onclick="subtract()">Subtraction</button>
+        <button id="multi" class="btns" onclick="multiply()">Multiplication</button>
+        <button id="div" class="btns" onclick="divide()">Division</button>
+        <button id="mod" class="btns" onclick="modulus()">Modulus</button>
+    </div>
+    <div class="inputs">
+        <label>Enter 1st Number : </label>
+        <input id="first_in" type="number">
+        <span style="width: 20px;"></span>
+        <label>Enter 2nd Number : </label>
+        <input id="sec_in" type="number">
+    </div>
+    <div class="op_ans">
+        <label>Operation : </label>
+        <input id="op" type="text" readonly>
+        <span style="width: 20px;"></span>
+        <label>Answer : </label>
+        <input id="ans" type="text" readonly>
+    </div>
+
+    <script>
+        function add(){
+            let first = document.getElementById("first_in").value;
+            let second = document.getElementById("sec_in").value;
+
+            let ans = parseInt(first) + parseInt(second);
+            document.getElementById("op").value = "Addition";
+            document.getElementById("ans").value = ans;
+        }
+
+        function subtract(){
+            let first = document.getElementById("first_in").value;
+            let second = document.getElementById("sec_in").value;
+            let ans = parseInt(first) - parseInt(second);
+            document.getElementById("op").value = "Subtraction";
+            document.getElementById("ans").value = ans;
+        }
+
+        function multiply(){
+            let first = document.getElementById("first_in").value;
+            let second = document.getElementById("sec_in").value;
+            let ans = parseInt(first) * parseInt(second);
+            document.getElementById("op").value = "Multiplication";
+            document.getElementById("ans").value = ans;
+        }
+
+        function divide(){
+            let first = document.getElementById("first_in").value;
+            let second = document.getElementById("sec_in").value;
+            if(second != 0){
+                let ans = parseInt(first) / parseInt(second);
+                document.getElementById("op").value = "Division";
+                document.getElementById("ans").value = ans;
+            } else {
+                document.getElementById("op").value = "Error";
+                document.getElementById("ans").value = "Cannot divide by zero";
+            }
+        }
+
+        function modulus(){
+            let first = document.getElementById("first_in").value;
+            let second = document.getElementById("sec_in").value;
+            if(second != 0){
+                let ans = parseInt(first) % parseInt(second);
+                document.getElementById("op").value = "Modulus";
+                document.getElementById("ans").value = ans;
+            } else {
+                document.getElementById("op").value = "Error";
+                document.getElementById("ans").value = "Cannot divide by zero";
+            }
+        }
+    </script>
+</body>
+</html>

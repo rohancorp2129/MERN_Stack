@@ -1,0 +1,30 @@
+cdc code ,
+    mkdir 
+    npm create vit@latest project-name 
+    react
+    javascript
+
+    cd myapp
+    npm install
+
+    npm run dev
+
+    run on 5173 port using vit 
+    run on 3000 using npm 
+
+useState
+useeffect
+useReducer
+
+lifecycle method 
+
+
+
+
+    useeffect : use lifecycle using functional component 
+
+    componentDidmMount() : with dependancy 
+    componentDidUpdate() : without dependancy ,and also update something [count] dependancy
+    ComponentWillUnmount() : inside useeffect need to return callback fun .
+
+

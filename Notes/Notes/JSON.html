@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>JSON and Its Methods</h1>
+    <hr>
+
+
+    <script>
+
+        const obj = {
+            id: 1,
+            name: 'Pratik',
+            email: 'pratik@gmail.com',
+            mobile: '987654321'
+        }
+        console.log(obj)
+
+
+        // Convert into JSON string format
+        // Converts a JavaScript value to a JavaScript Object Notation (JSON) string.
+        console.log(JSON.stringify(obj))
+
+
+
+        // *****************************
+        const arr = ["ABC", "XYZ", "PQR"]
+        console.log(arr)
+
+        console.log(JSON.stringify(arr));// 
+
+        
+        // ****************************************************************
+
+
+        const jsonobj = '{"id":1, "name":"ADitya","skill":"React"}'
+        console.log(jsonobj)
+
+        // JSON.parse()
+
+        // Convert JSON data into plain JS Values
+        console.log(JSON.parse(jsonobj))
+
+
+        // jsonarr
+        const jsonarr = "[10,20,30,40,50,60]"
+        console.log(jsonarr);
+
+        console.log(JSON.parse(jsonarr));
+
+
+
+
+    </script>
+
+</body>
+
+</html>

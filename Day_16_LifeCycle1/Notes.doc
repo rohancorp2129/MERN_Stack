@@ -1,0 +1,60 @@
+Lifecycle : 
+phases : 
+    Mounting - Birth of your component Add component to the DOM Tree
+    Update Growth of your component - Updates
+    Unmount Death of your component Remove or Destroy From DOM Node Tree
+
+Each method has their own methods . 
+
+ErrorHandling-
+static getDerivedStateFromErrors(){
+    }
+    
+#Mounting phase initial stage of your react application
+
+# 1 : Mounting Phase :
+
+getInitialStage()
+constructor()
+render()
+static getDerivedStateFromProps() : return current state and props data , 
+componentDidMount()
+
+Methods : 
+    1. constructor() : called before render , need to called super()
+    2. render() : it return renders 
+    3. static getDerivedStateFromProps() : It called on each and every rendering , means it called whenever you Update anything , It return compalsary .
+           must craete this one as static . 
+    4. componentDidMount() : used to to side effect on our component , i.e do something after rendering , 
+        called after render method 
+        Used : API calling , Network request , Event trigger , setTimeout
+
+# 2 : Updating Phase : 
+            This phase triggered when state / props update 
+Methods : 
+   
+    1. shouldComponentUpdate(nextProps, nextState) : (update karne ke bad render karu ya nahi ) when react doens't want want to render state props changes 
+        shound i update component with state / props changes or not 
+            needs two args : nextProps and nextState
+            default return : true
+
+
+    2. getSnapshotBeforeUpdate(prevProps, prevState) : DOM update hone se pehle snapshot dega , 
+                always call this method inside componentDidUpdate method.
+
+    3. componentDidUpdate() : it call after updating something 
+
+    cdc code ,
+    mkdir 
+    npm create-vit@latest
+    project-name 
+    react
+    javascript
+
+    cd myapp
+    npm install
+
+    npm run dev
+
+    run on 5173 port using vit 
+    run on 3000 using npm 

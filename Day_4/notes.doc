@@ -1,0 +1,89 @@
+
+
+Component :  block of code which is used to make our webpage structural. small piece of code file 
+
+Resubality 
+
+* every component must return some JSX
+
+every module /component file need to be export 
+
+
+
+Stateless "Functional"  component  : simple , easy , 
+
+Statefull "Class"  Component : we use class here and used render memthod and inside render we return code
+                                we need to extends Reacat.COmponent in class 
+
+
+Stateless Functional Component : 
+    
+ 
+function App(){
+    return(
+        <>
+
+        code
+        </>
+    )
+} 
+
+export default App;
+
+
+if you are using any fun then use 
+
+    export {name_of_fun};
+
+
+Statufull "Class" component :
+
+
+        we can extends (inherite)
+        resuable
+        mostly OOPS concept available in this component 
+        render method :
+            pure method , used to render  or return our jsx code which is used in class component .
+            It doesn't directly interact with browser and does not modify state
+
+    state : built in obj to manage state of components and store data 
+            mutable : can change 
+            cant access child element but can access parents .
+
+
+constructure() :  use to initilize and create instances 
+
+ supre() : we need to call super() to call methods of our parents 
+            we can call : 
+            
+            constructure(){
+                supre(); // need to call
+                this.state=({
+                    name: "Rohan"
+                    
+                })
+            }
+
+
+            
+
+class ClsName extend React.Component {
+
+    constructure(){
+                supre(); // need to call
+                this.state=({
+                    name: "Rohan"
+                    
+                })
+            }
+
+    render(){
+        return(){
+            <>
+
+
+            </>
+
+        }
+    }
+}

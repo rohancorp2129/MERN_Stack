@@ -1,0 +1,38 @@
+
+
+
+Folder Strcture-
+
+Package.json
+
+Complete meta data about your react application
+Complete summary and overview of your React Application
+
+
+package-lock.json-  In detailed information about your react Application i.e   meta data about dependencies
+
+
+Readme.md-  redable file i.e Complete guide for react application
+     
+
+******************************
+node modules-  actual files of dependencies and packages
+
+*****************
+public- root folder - all static data media files, 
+
+
+       index.html- root file
+
+       manifest.json- mostly used in mobile app
+       robots.txt
+
+******************************
+
+src- all logical files
+     testing file
+     web vitals -performance check
+
+- Js.ts,css
+
+By default component- app.js

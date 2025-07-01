@@ -1,0 +1,178 @@
+## 🌐 **React Context API & Prop Drilling - Full Notes**
+
+---
+
+### 🔄 What is **Prop Drilling**?
+
+**Prop Drilling** refers to the process of **passing data (props)** from a **parent component** to a **deeply nested child component** through multiple intermediate components —
+**even if those intermediate components don’t use the data**.
+
+---
+
+### ❌ Problems Caused by Prop Drilling:
+
+* ❗ Code becomes **complex**
+* 🐌 Slows down **development**
+* ⚙️ Impacts **performance**
+* 🧩 Reduces **maintainability**
+* 😵 Harder to **debug and manage**
+
+---
+
+### ✅ **Solution → React Context API**
+
+React’s built-in **Context API** allows you to create **global data** that can be accessed by any component —
+**without passing props manually at every level**.
+
+---
+
+### 🧠 **Concept Overview:**
+
+* Centralized data sharing
+* Avoids unnecessary prop chaining
+* Perfect for theme, auth, user info, language, etc.
+
+---
+
+## ⚙️ How to Use Context API (4 Steps)
+
+---
+
+### 📦 Step 1: Create Context
+
+js
+import { createContext } from 'react';
+
+const UserContext = createContext(); // Create context object
+
+
+---
+
+### 🔗 Step 2: Provide the Data Using Provider
+
+
+<UserContext.Provider value="Rohan">
+  <App />
+</UserContext.Provider>
+
+
+Wrap your components inside '<Provider>' and provide the data using 'value'.
+
+---
+
+### 🧠 Step 3: Use Context via 'useContext' Hook
+
+#### ✅ useContext Hook Syntax:
+
+js
+const value = useContext(SomeContext);
+
+
+> 🧠 **Explanation:**
+> 'useContext' accepts a context object (created using 'React.createContext()') and returns the current value from the nearest matching 'Provider'.
+
+---
+
+### 📥 Step 4: Export & Use
+
+Export your context object and use it in any component to directly access shared data using 'useContext'.
+
+---
+
+## ✅ Full Working Example
+
+### ✅ Folder Structure:
+
+
+src/
+├── Context/
+│   ├── contextData.
+│   └── Consumer.
+├── index.js
+
+
+---
+
+### 📄 'contextData.' – Context Setup
+
+
+import React from 'react';
+import { createContext } from 'react';
+import Consumer from './Consumer';
+
+const uName = createContext();
+const uEmail = createContext();
+
+const ContextData = () => {
+  return (
+    <uName.Provider value="Rohan">
+      <uEmail.Provider value="rohan@gmail.com">
+        <Consumer />
+      </uEmail.Provider>
+    </uName.Provider>
+  );
+};
+
+export default ContextData;
+export { uName, uEmail };
+
+
+---
+
+### 📄 'Consumer.' – Using Context
+
+
+import React, { useContext } from 'react';
+import { uName, uEmail } from './contextData';
+
+const Consumer = () => {
+  const name = useContext(uName);
+  const email = useContext(uEmail);
+
+  return (
+    <>
+      <h2>Consumer Component</h2>
+      <h3>User Name: {name}</h3>
+      <h3>User Email: {email}</h3>
+    </>
+  );
+};
+
+export default Consumer;
+
+
+---
+
+### 📄 'index.js' – Entry Point
+
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import ContextData from './Context/contextData';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <ContextData />
+  </React.StrictMode>
+);
+
+
+---
+
+### 🖥️ Sample Output:
+
+
+Consumer Component
+User Name: Rohan
+User Email: rohan@gmail.com
+
+
+---
+
+### 🎯 Summary:
+
+✅ Avoids Prop Drilling
+✅ Easy data sharing
+✅ Clean and scalable structure
+✅ Ideal for theme, auth, user data, language, etc.

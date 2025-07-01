@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Destructuring : 
+        Array destructuring
+        Object destructuring 
+        
+        -->
+
+    <script>
+        const obj={
+            id: 10,
+            name:'rohan',
+            skill:"mern stack"
+        }
+        console.log(obj)
+        console.log(obj.id)
+        console.log(obj.name)
+        console.log(obj.skill)
+
+        // Object Destructring 
+
+        const {id, name,skill} =obj
+        console.log("below object data using destructuring ")
+        console.log(id)
+        console.log(name)
+        console.log(skill)
+
+        // ***************************************
+
+        // Array Destructuring 
+        const arr=[10,20,30,40,50,60,70,80,90]
+        console.log(arr)
+        console.log(arr[0])
+        console.log(arr[3])
+        console.log(arr[2])
+        console.log(arr[4])
+
+        // Destructuring 
+
+        const [A,B,C,D,E,F,G,H,I]=arr;
+        console.log(I) // 90 
+
+
+
+    </script>
+</body>
+</html>

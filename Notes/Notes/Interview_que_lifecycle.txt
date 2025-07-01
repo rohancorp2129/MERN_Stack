@@ -1,0 +1,63 @@
+
+
+
+How_to_execute_lifecycle Methods of class component in a Functional Component
+
+Read more: https://www.java67.com/2021/09/ow-to-use-lifecycle-methods-in-functinal.html#ixzz8OrOCIouv
+
+
+
+useEffect( () => {
+
+}, [])
+
+
+
+//1 Mounting- componentDidMount()
+
+
+useEffect(()=>{
+
+ console.log("This code will execute when the component is mounted");
+
+},[])
+
+
+
+*****************************************************************************************************
+
+
+//componentDidUpdate()
+//The componentDidUpdate method executes only when the component updates. 
+
+
+
+
+useEffect(()=>{
+
+console.log("This code will execute when the component updates");
+
+},[count])
+
+*********************************************************************************
+
+
+componentWillUnmount()
+This  method executes when the component is unmounted, or removed from the DOM tree. 
+
+useEffect(()=>{
+
+return ()=>{
+    console.log('Behavior right before the component is removed from the DOM');
+}
+
+},[])
+
+
+
+
+
+Reference
+
+
+https://www.java67.com/2021/09/ow-to-use-lifecycle-methods-in-functinal.html

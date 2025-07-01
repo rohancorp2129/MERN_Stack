@@ -1,0 +1,147 @@
+
+
+## 📘 React Router & Hooks – Developer Notes
+
+---
+
+### 🔁 React Router – Overview
+
+**Use Cases:**
+
+* Navigate or redirect to multiple components/pages without full page reload.
+* Handles URL routing, dynamic params, redirection, and data loading.
+* Supports SPA (Single Page Applications).
+
+**Package:**
+
+* 'react-router-dom': Declarative routing library for React apps.
+
+**Versions:**
+
+* Latest Version: '7.2.0'
+* Previous Version: '6'
+
+---
+
+### 🔗 Key Components
+
+* **BrowserRouter**: Connects your React app to the browser's URL. Acts as the routing context provider.
+* **Routes** (previously 'Switch'): Container to hold all '<Route>' definitions.
+
+---
+
+## ⚛️ React Router DOM Hooks
+
+---
+
+### 🔹 1. 'useNavigate()'
+
+* Replaces the older 'useHistory()' hook.
+* Used to programmatically navigate between pages.
+
+**Import:**
+
+
+import { useNavigate } from 'react-router-dom';
+
+
+**Usage:**
+
+
+const navigate = useNavigate();
+navigate('/about');      // Navigate to About page
+navigate(-1);            // Go back in history
+
+
+---
+
+### 🔹 2. 'useLocation()'
+
+* Returns the current location object: 'pathname', 'search', 'hash', etc.
+* Helpful in conditional rendering and tracking the route.
+
+**Import:**
+
+
+import { useLocation } from 'react-router-dom';
+
+
+**Usage:**
+
+
+const location = useLocation();
+console.log(location.pathname); // e.g., "/dashboard"
+
+
+---
+
+### 🔹 3. 'useParams()'
+
+* Returns an object of key/value pairs from the current dynamic route parameters.
+
+**Import:**
+
+
+import { useParams } from 'react-router-dom';
+
+
+**Example:**
+
+
+<Route path="/user/:id" element={<User />} />
+const { id } = useParams(); // Access dynamic :id from URL
+
+
+---
+
+## 🧠 Core React Hooks (Important for All Components)
+
+---
+
+### ✅ 'useState()'
+
+**Purpose:** Add local state in functional components.
+
+**Syntax:**
+
+
+import { useState } from 'react';
+
+const [count, setCount] = useState(0);
+
+<button onClick={() => setCount(count + 1)}>Click</button>
+
+
+---
+
+### ✅ 'useEffect()'
+
+
+**Purpose:** do something after rendering , 
+  Perform side effects of our application  (e.g., API calls, timers, subscriptions).
+
+
+
+**Syntax:**
+
+
+import { useEffect } from 'react';
+
+useEffect(() => {
+  console.log("Component Mounted");
+
+  return () => {
+    console.log("Cleanup when unmounted");
+  };
+}, []); // Empty array means run once after mount
+
+
+---
+
+## 🔁 Summary
+
+* React Router makes navigation seamless in SPAs.
+* Hooks like 'useNavigate', 'useLocation', 'useParams' simplify routing logic.
+* Core hooks 'useState' and 'useEffect' are essential for managing logic in components.
+
+

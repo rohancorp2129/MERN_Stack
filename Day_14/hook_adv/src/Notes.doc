@@ -1,0 +1,40 @@
+rafce : react arrow funtion component Example
+
+
+# useReducer Hook :
+    replacement of useState hook 
+    Used while Performance Optmization
+    Used when u have complex multiple state logic
+    i.e Used to handle multiple cases, operations at a same time
+
+syntax : 
+const [state, setState]=useState(initialState);
+
+syntax: 
+const [state, dispatch]=useReducer (reducer, initialState)
+
+* No need to add break keywork under switch , cause it will stop execution and default happened same as per our logic 
+
+
+* Additional Points:
+useReducer is usually preferable to useState
+when you have complex state logic that involves multiple sub values.
+It also lets you optimize performance
+for components that trigger deep updates because you can pass dispatch down instead of callbacks
+
+
+#useRef- hook 
+(uncontroll component )
+    Used for performance optmization
+    Used to handle mutable object data like form Handling using current and Ref attribute/Property
+    return mutable ref object data
+
+    * Avoid rendering cause
+
+    It can be used to store a mutable value that does not cause a re-render when updated. ex . form handling ke time pe use karte hain 
+
+    * It can be used to access a DOM element directly.
+    
+    #Does Not Cause Re-renders
+    If we tried to count how many times our application renders using the useState Hook, we would be caught in an infinite loop since this Hook itself causes a re-render.
+

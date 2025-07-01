@@ -1,0 +1,49 @@
+What is npm ?   
+            npm stands for Node Package Manager.
+            It's a tool to install, update, and manage JavaScript packages.
+            Comes bundled with Node.js. NOde js is library which is used in Backend development 
+            Helps developers use open-source libraries easily.
+    Example:
+        npm install react            Installs React into your project.
+
+
+Babel : 
+        Babel is a JavaScript compiler.
+        It converts modern JavaScript (ES6/ES7) into older JavaScript versions.
+        Helps browsers understand JSX in React.
+        Mostly works in the background (configured via Webpack or Create React App).
+
+Folder Structure (React Project) :
+        When you create a React app with: npx create-react-app my-app
+
+        my-app/
+        ├── node_modules/        → All installed packages
+        ├── public/              → Static files (e.g., index.html)
+        │   └── index.html       → Main HTML page (root for React)
+                robots.txt      allows / not allowas 
+        ├── src/                 → All your React code
+        │   ├── App.js           → Main app component
+        │   └── index.js         → Entry point, renders <App />
+        ├── package.json         → Project config + dependencies
+        ├── README.md            → Instructions for project
+
+
+Web Package :
+
+        A web package is a reusable code library for web development.
+        Usually installed using npm or yarn.
+        webpack :  publlic folder not bunding 
+    Examples:
+
+
+        react – front-end library
+
+        axios – for HTTP requests
+
+        bootstrap – for styling
+
+        react-router-dom – for routing in React
+
+        These packages save time and boost productivity by providing pre-written, tested functionality.
+
+

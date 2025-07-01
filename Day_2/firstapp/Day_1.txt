@@ -1,0 +1,242 @@
+
+Js-Library 
+
+front end development 
+react - react is a js library which is developed by facebook/meta in 2011 .
+
+developed by facebook meta in 2011 by jorden walke
+ due to Ghost problem , data management ... () 
+
+in 2013 publish as open sourse /free
+
+***********************************************
+
+Most demoanding /Popular
+
+Easy to learn 
+Need only JS
+
+JSX - Extention of js i.e 
+JS + HTML
+JSX is a syntax extension for JavaScript. It allows you to write HTML in your JavaScript files.
+
+freedom to code and code ...
+
+**********************************************
+
+Angular js ---- Highly coupled 
+
+React Js ------ Loosely coupled (independent), poular to developed single page developement .
+
+framework vs Library 
+
+jQuery : javascript library 
+
+AJAX : js framework , ajax is Asynchronous(non blocking object)  without reloading entire web page , it will interact with backend and frontend 
+
+Q. can we flex AJAX request in react ----- yes 
+
+Features of react Js :
+
+virtual DOM - copy of DOM
+XSS protwction --- cross site protection 
+JSX - syntax extension of js we can write js + html code
+👉JS librray meta-2011 /2013-publish
+👉Virtual DOM- React Faster (Copy of regular dom)
+👉one way binding-data flow
+👉XSS Protection- security
+👉SPA-Single Page Application-Performance Improve and fast result 
+        i.e Component Based Architecture
+
+👉JSX- extension of JS i.e we can write html and JS code in one file
+
+
+Setup React Js project 
+
+1. we can integrete react in existing HTML file 
+2. Using CDN Content Delivery Network or Local Setup
+3. Through command -npm tool 
+4. Single Command 
+
+
+npm - Node Package Manager 
+
+commands : 
+1. npm init - initilize package.json file
+2. npm install - install package.json file
+3. npm start - start the project
+4. npm run build - build the project
+5. npm run test - test the project
+
+6. npm run eject - eject the project
+7. npm run lint - lint the project
+8. npm run build - build the project
+
+Node Js - 
+
+Process to ceate app:
+
+create saperate folder for each app
+mkdir raect_day2 First_App
+cd First_App
+
+npx create-react-app First_App
+sol. 
+npm cache clean --force 
+npx create-react-app First_App
+
+
+
+web-vitals fail -
+
+ls 
+fistapp 
+cd First_App
+npm i web-vitals 
+
+npm start 
+
+Powershell commands for error :
+
+GetExecution
+
+node -v
+npm -v 
+
+# Steps To Create Our React APP
+
+👉mkdir React_Day_2_First_APP
+cd React_Day_2_First_APP
+
+👉npx create-react-app firstapp
+
+👉cd firstapp
+
+👉npm start- batch program
+            Executes multiple commands sequentially
+
+
+👉Port no 3000
+
+// npm cache clean --force
+
+        // npm i -g npm
+
+
+
+
+npm init -y
+npm install express
+npm install react
+
+
+
+
+
+
+JS librray meta-2011 /2013-publish
+
+Virtual DOM- React Faster (Copy of regular dom)
+one way binding-data flow
+XSS Protection- security
+SPA-Single Page Application-Performance Improve and fast result 
+
+Testing : Jest library by react 
+Routing - React router 
+Mobile App - react native 
+state management - redux/Mobux
+
+why react ? 
+    react has virtual DOM (Document object model) , hirarchical structure .
+
+    data flow - uni-directional ( parent to child)
+    to build single page app.
+    JSX - in one file we can write hrml , css and javascript 
+    virtual DOM -(copy of real dom)  faster than real DOM
+    XSS protection - for security purpose 
+
+******************************************
+
+Babel - Is a transpiler -
+JSX  convert JSX ( modern Js ) into plain Js
+
+most popular tool of JS 
+Convert es-6 features into backend .....
+
+react dev. 
+
+
+Disadvantages : 
+    Virtual DOM - need more memory 
+    Only biuld UI but cant control 
+
+Application-  
+
+ FB, Gmail,Web whatasapp,Instagram,FB,netflix,Twitter,YT
+ outlook,Airbnb,dropbox,shopify ,trello,Linkedin and More
+
+Amazon
+flipkart
+
+
+Q . What is react and why we choose react ?
+JS librray meta-2011 /2013-publish
+
+Virtual DOM- React Faster (Copy of regular dom)
+one way binding-data flow
+XSS Protection- security
+SPA-Single Page Application-Performance Improve and fast result 
+
+JSX- extension of JS i.e we can write html and JS code in one file
+
+
+(1) what is react ?
+    React is a JavaScript library, developed by facebook meta in 2011 by jorden walke to build user interfaces by creating reusable UI components.
+
+
+(2) WHY React?
+Easy to Learn: React is relatively easy to learn, especially for developers already familiar with JavaScript and HTML/CSS.
+
+Fast and Efficient: React's virtual DOM makes it fast and efficient, reducing the number of DOM mutations and improving performance.
+
+Reusable Components: React's component-based architecture makes it easy to reuse code and build complex UIs.
+
+Large Community: React has a massive community of developers, which means there are many resources available for learning and troubleshooting.
+
+Cross-Platform: React can be used for web, mobile, and desktop applications, making it a versatile choice.
+
+
+(3) Features of React ?
+
+Components: React's core feature is its component-based architecture, which allows you to break down your UI into smaller, reusable pieces.
+
+Virtual DOM: React's virtual DOM is a lightweight in-memory representation of the real DOM, which improves performance and reduces the number of DOM mutations.
+
+JSX: JSX is a syntax extension for JavaScript that allows you to write HTML-like code in your JavaScript files.
+
+State and Props: React's state and props system allows you to manage the state of your components and pass data between them.
+
+Event Handling: React's event handling system allows you to respond to user interactions and update your UI accordingly.
+
+Declarative Programming: React's declarative programming style means you describe what you want to see in your UI, rather than how to achieve it.
+
+Server-Side Rendering: React can be used for server-side rendering, which improves SEO and reduces the initial load time of your application.
+
+
+JSX- extension of JS i.e we can write html and JS code in one file
+    component based architecture - reusable , modular , easy to maintain , easy to test
+
+
+    react is a library not a framework .
+    react is used for building user interface in react .
+    react is used for building single page application .
+    react is used for building reusable UI components .
+    react is used for building dynamic UI components .
+    react is used for building responsive UI components .
+    react is used for building mobile UI components .
+    react is used for building web UI components .
+    react is used for building desktop UI components .
+    react is used for building enterprise UI components .
+    react is used for building real time UI components .
+    react is used for building real time UI components .
+    

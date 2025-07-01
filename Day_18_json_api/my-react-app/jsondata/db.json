@@ -1,0 +1,34 @@
+{
+  "EMP": [
+    {
+      "id": 1,
+      "name": "ROHAN",
+      "skills": "React",
+      "ctc": "10LPA"
+    },
+    {
+      "id": 2,
+      "name": "Rahul",
+      "skills": "HTML",
+      "ctc": "10LPA"
+    },
+    {
+      "id": 3,
+      "name": "Shivkanya",
+      "skills": "Javascript",
+      "ctc": "10LPA"
+    },
+    {
+      "id": 4,
+      "name": "Raj",
+      "skills": "Java",
+      "ctc": "10LPA"
+    },
+    {
+      "id": 5,
+      "name": "Sachin",
+      "skills": "Excel",
+      "ctc": "7LPA"
+    }
+  ]
+}

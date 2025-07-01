@@ -1,0 +1,181 @@
+⚛️ React Hooks Master Guide
+The Ultimate Reference with Visual Examples
+
+🎯 Core Hooks : 
+
+1. useState
+
+
+const [value, setValue] = useState(initialValue);
+When to Use:
+
+Managing simple state (numbers, strings, booleans)
+
+Local component state
+
+Example:
+            const [count, setCount] = useState(0); // Initialize with 0
+            <button onClick={() => setCount(count + 1)}>
+            Clicked {count} times
+            </button>
+
+2. useEffect
+
+        useEffect(() => {
+        // Side effect logic
+        return () => { /* Cleanup */ };
+        }, [dependencies]);
+
+Lifecycle Visual:
+
+    Mount → Run Effect  
+    Update → Cleanup → Run Effect  
+    Unmount → Cleanup
+
+Common Uses:
+
+    // 1. API Calls
+    useEffect(() => {
+    fetch('/api/data').then(setData);
+    }, []);
+
+    // 2. Event Listeners
+    useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+📊 Advanced State Management
+
+useReducer :
+
+    const [state, dispatch] = useReducer(reducer, initialState);
+
+Redux Pattern:
+
+        // Reducer function
+        function counterReducer(state, action) {
+        switch (action.type) {
+            case 'INCREMENT': return { count: state.count + 1 };
+            case 'DECREMENT': return { count: state.count - 1 };
+            default: return state;
+        }
+        }
+
+        // Usage
+        dispatch({ type: 'INCREMENT' });
+
+vs useState:
+
+        Feature	    useState	    useReducer
+        Best for	Simple state	Complex state
+        Boilerplate	Low	            Moderate
+        Testability	    Harder	    Easier
+        🔍 Refs & DOM Access
+
+useRef
+
+    const ref = useRef(initialValue);
+
+Key Features:
+
+        Mutable .current property
+
+        Doesn’t trigger re-renders
+
+Use Cases:
+
+// 1. DOM Access
+    const inputRef = useRef();
+    <input ref={inputRef} />;
+    inputRef.current.focus();
+
+// 2. Storing mutable values
+    const renderCount = useRef(0);
+    useEffect(() => { renderCount.current++ });
+
+🌐 Context API
+useContext : 
+
+    const value = useContext(MyContext);
+
+Implementation:
+
+// 1. Create Context
+    const ThemeContext = createContext('light');
+
+// 2. Provide Context
+    <ThemeContext.Provider value="dark">
+    <ChildComponent />
+    </ThemeContext.Provider>
+
+// 3. Consume Context
+
+    const theme = useContext(ThemeContext); // 'dark'
+
+⚡ Performance Optimization
+
+useMemo vs useCallback
+
+// cache calculation results
+    const memoizedValue = useMemo(() => compute(a, b), [a, b]);
+
+// cache calculation results
+    const memoizedFn = useCallback(() => doSomething(a, b), [a, b]);
+
+When to Use:
+
+        Scenario	Solution
+        Heavy computation	useMemo
+        Passing callbacks	useCallback
+
+🆕 React 18+ Features
+
+Concurrent Mode Hooks
+
+    const [isPending, startTransition] = useTransition();
+    const deferredValue = useDeferredValue(value);
+Example:
+
+// 1. Mark non-urgent updates
+    startTransition(() => {
+    setSearchQuery(input); // Low-priority
+    });
+
+// 2. Defer rendering
+
+    const deferredResults = useDeferredValue(searchResults);
+
+📝 Quick Reference Table
+
+Hook	            Category	            Key Purpose
+useState	        State	                Simple state management
+useEffect       	Side Effects        	Data fetching, subscriptions
+useRef	            Refs	                DOM access / mutable values
+useContext      	Context	                Global state sharing
+useReducer      	State               	Complex state logic
+useMemo	            Performance         	Memoize expensive calculations
+useCallback     	Performance         	Memoize functions
+
+
+Hook Comparison Cheat Sheet
+(Printer-Friendly Table)
+
+Hook	        Purpose	            Re-renders?	    Common Pitfalls
+
+useState	    Simple state	       ✅	        Stale closures
+useEffect	    Side effects	       ❌	        Missing deps, infinite loops
+useRef	        DOM/mutable values	   ❌	        .current access
+useContext	    Global state	       ✅	        Provider value changes
+useReducer	    Complex state	       ✅	        Reducer purity
+useMemo	        Memoize values	       ❌	        Overuse
+useCallback	    Memoize functions	   ❌	        Incorrect deps
+
+💡 Pro Tips
+        Structure hooks at the top of your component
+
+        Always specify dependencies in useEffect to avoid bugs
+
+        Combine useReducer + useContext for Redux-like state
+
+        Use useMemo/useCallback only when profiling shows benefits
