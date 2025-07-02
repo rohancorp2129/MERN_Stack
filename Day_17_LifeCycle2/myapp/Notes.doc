@@ -1,6 +1,7 @@
 cdc code ,
     mkdir 
-    npm create vit@latest project-name 
+    npm create vite@latest project-name 
+    
     react
     javascript
 
@@ -9,7 +10,7 @@ cdc code ,
 
     npm run dev
 
-    run on 5173 port using vit 
+    run on 5173 port using vite
     run on 3000 using npm 
 
 useState
