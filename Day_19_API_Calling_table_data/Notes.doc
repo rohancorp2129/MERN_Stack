@@ -1,0 +1,67 @@
+create json server : 
+cd app 
+mkdir json-data
+cd 
+npx json-server --watch db.json
+
+
+
+API calling : 
+    1. XMLHttpRequest method 
+    2. Fetch method - 
+    3. axios package
+
+callback() : 
+
+promises : 
+     object represaenting the eventual completion or failure of an asysnchronous operationm 
+     It provide a cleaner way to handle asysc operation  , used when to avoid callback hell 
+
+    state : 
+            1. Pending : initial state , neither fullfill nor rejected 
+            2. Fulfilled : oOoperation completed successfully 
+            3. Rejected : Operation failed 
+
+    Methods : 
+            1 .then(): Executes when the Promise is fulfilled.
+            2 .catch(): Executes when the Promise is rejected.
+            3 .finally(): Executes regardless of the Promise's outcome.
+
+Asysc/Await : Async/Await is a simpler way to work with Promises in JavaScript. 
+              It lets you write code that handles tasks which take time, like fetching data, in a way like regular,
+              step-by-step code. The async keyword is used to create a function that returns a Promise, 
+              while the await keyword pauses the function's execution until the Promise is done.
+
+
+🔸 Promise
+Represents a future value (pending, resolved, or rejected).
+
+Uses .then() and .catch() for chaining and error handling.
+
+Example:
+
+    fetchData()
+    .then(response => console.log(response))
+    .catch(error => console.log(error));
+    
+🔹 Async/Await
+Syntactic sugar over Promises.
+
+    Code looks synchronous and is easier to read.
+
+    Uses try...catch for error handling.
+
+Example:
+
+    async function getData() {
+    try {
+        const response = await fetchData();
+        console.log(response);
+    } catch (error) {
+        console.log(error);
+    }
+    }
+
+✅ Async/Await is preferred for better readability
+✅ Promises are useful when chaining multiple async tasks
+
