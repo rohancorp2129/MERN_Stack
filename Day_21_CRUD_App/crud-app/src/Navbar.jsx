@@ -9,10 +9,10 @@ const Navbar = () => {
         <Link className="navbar-brand fw-bold text-warning d-flex align-items-center gap-2" to="/">
           <img 
             src="https://rohan-rakh-portfolio.netlify.app/favicon.ico" 
-            alt="logo"
+            alt="logo" 
             style={{ height: '28px' }}
           />
-          MyApp
+          UserHub | CRUP Operation 
         </Link>
 
         {/* Toggle for mobile view */}

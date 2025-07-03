@@ -48,6 +48,13 @@
       "role": "React Dev",
       "skill": "React Js",
       "id": 7
+    },
+    {
+      "name": "Rohan",
+      "email": "rahul2129@gmail.com",
+      "role": "MR",
+      "skill": "Optha",
+      "id": 8
     }
   ]
 }
