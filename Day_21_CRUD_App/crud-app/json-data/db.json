@@ -1,0 +1,53 @@
+{
+  "User": [
+    {
+      "id": 1,
+      "name": "Rohan",
+      "email": "rohan@gmail.com",
+      "role": "MERN Developer",
+      "skill": "React js"
+    },
+    {
+      "id": 2,
+      "name": "Pooja",
+      "email": "pooja@gmail.com",
+      "role": "Frontend Developer",
+      "skill": "Vue.js"
+    },
+    {
+      "id": 3,
+      "name": "Amit",
+      "email": "amit@gmail.com",
+      "role": "Backend Developer",
+      "skill": "Node.js"
+    },
+    {
+      "id": 4,
+      "name": "Sneha",
+      "email": "sneha@gmail.com",
+      "role": "Full Stack Developer",
+      "skill": "Angular"
+    },
+    {
+      "id": 5,
+      "name": "Raj",
+      "email": "raj@gmail.com",
+      "role": "Software Engineer",
+      "skill": "Python"
+    },
+    {
+      "name": "Rohan",
+      "email": "rohancorp2129@gmail.com",
+      "role": "HTML dev",
+      "skill": "HTML",
+      "id": 6
+    },
+    {
+      "name": "Rohan",
+      "email": "rohanrakh1212@gmail.com",
+      "role": "React Dev",
+      "skill": "React Js",
+      "id": 7
+    }
+  ]
+}
